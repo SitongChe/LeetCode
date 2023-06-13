@@ -7,7 +7,7 @@ def generate_md_file(folder_path, output_file):
         md_file.write("# LeetCode Questions And Answers\n\n")
         
         # Iterate over the files and subdirectories in the folder
-        for root, dirs, files in os.walk(folder_path):
+        for root, dirs, files in sorted(os.walk(folder_path)):
             subtitle = os.path.relpath(root, folder_path)
             if subtitle.startswith(".") or subtitle.endswith("__"):
                 continue
