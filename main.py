@@ -1,13 +1,12 @@
-from Graph._127WordLadder import Solution
+from OpenAI._71SimplifyPath import Solution
 
 def main():
-    beginWord = "hit"
-    endWord = "cog"
-    wordList = ["hot", "dot", "dog", "lot", "log", "cog"]
+    current = "/facebook/instagram"
+    change = "../abc/def/~/aaa"
     
     solution = Solution()
-    length = solution.ladderLength(beginWord, endWord, wordList)
-    print("Shortest transformation length:", length)
+    optput = solution.applyChange(current, change)
+    print("output:", optput)
 
 if __name__ == "__main__":
     main()

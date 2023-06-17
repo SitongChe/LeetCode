@@ -1,5 +1,14 @@
 # LeetCode Questions And Answers
 
+## Airbnb
+- [_251Flatten2DVector.py](Airbnb/_251Flatten2DVector.py)
+- [_269AlienDictionary.py](Airbnb/_269AlienDictionary.py)
+- [_324WiggleSortII.py](Airbnb/_324WiggleSortII.py)
+- [_336PalindromePairs.py](Airbnb/_336PalindromePairs.py)
+- [_43MultiplyStrings.py](Airbnb/_43MultiplyStrings.py)
+- [_68TextJustification.py](Airbnb/_68TextJustification.py)
+- [__init__.py](Airbnb/__init__.py)
+
 ## ArraysAndHashing
 - [_128LongestConsecutiveSequence.py](ArraysAndHashing/_128LongestConsecutiveSequence.py)
 - [_1TwoSum.py](ArraysAndHashing/_1TwoSum.py)
@@ -71,6 +80,11 @@
 - [_287FindtheDuplicateNumber.py](LinkedList/_287FindtheDuplicateNumber.py)
 - [_2AddTwoNumbers.py](LinkedList/_2AddTwoNumbers.py)
 - [__init__.py](LinkedList/__init__.py)
+
+## OpenAI
+- [_304RangeSumQuery2D-Immutable.py](OpenAI/_304RangeSumQuery2D-Immutable.py)
+- [_71SimplifyPath.py](OpenAI/_71SimplifyPath.py)
+- [__init__.py](OpenAI/__init__.py)
 
 ## PriorityQueue
 - [_1046LastStoneWeight.py](PriorityQueue/_1046LastStoneWeight.py)
