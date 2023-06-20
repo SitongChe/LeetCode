@@ -21,7 +21,6 @@
 - [_347TopKFrequentElements.py](ArraysAndHashing/_347TopKFrequentElements.py)
 - [_36ValidSudoku.py](ArraysAndHashing/_36ValidSudoku.py)
 - [_49GroupAnagrams.py](ArraysAndHashing/_49GroupAnagrams.py)
-- [_912SortanArray copy.py](ArraysAndHashing/_912SortanArray copy.py)
 - [_912SortanArray.py](ArraysAndHashing/_912SortanArray.py)
 - [__init__.py](ArraysAndHashing/__init__.py)
 
@@ -121,8 +120,6 @@
 - [_84LargestRectangleinHistogram.py](Stack/_84LargestRectangleinHistogram.py)
 - [_853CarFleet.py](Stack/_853CarFleet.py)
 - [__init__.py](Stack/__init__.py)
-
-## SystemDesign
 
 ## Trees
 - [_100SameTree.py](Trees/_100SameTree.py)
