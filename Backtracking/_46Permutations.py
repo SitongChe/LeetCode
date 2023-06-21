@@ -2,19 +2,22 @@
 #time O(N!) space O(N)
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
-        ans = []
-        n = len(nums)
-        def traceback(index):
-            if index==n-1:
-                ans.append(nums.copy())
+        def traceback():
+            if len(tmp) == n:
+                ans.append(tmp.copy())
                 return
-            for i in range(index,n):
-                nums[i],nums[index]=nums[index],nums[i]
-                traceback(index+1)
-                nums[i],nums[index]=nums[index],nums[i]
-        traceback(0)
+            for num in nums:
+                if num in tmp:
+                    continue
+                tmp.append(num)
+                traceback()
+                tmp.pop()
+        ans = []
+        tmp = []
+        n = len(nums)
+        traceback()
         return ans
-
+        
 
 
                     

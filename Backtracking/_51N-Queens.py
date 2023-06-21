@@ -2,28 +2,30 @@
 #time O(N!) space O(N^2*N!)
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
-        ans = []
-        tmp = []
-        def traceback(row,cols,diag1s,diag2s):
-            if row == n:
+        def traceback(i):
+            if i == n:
                 ans.append(tmp.copy())
                 return
-            for i in range(n):
-                col = i
-                if col in cols or row-col in diag1s or row+col in diag2s :
+            for j in range(n):
+                if j in cols or i+j in posDiag or i-j in negDiag:
                     continue
-                cols.add(col)
-                diag1s.add(row-col)
-                diag2s.add(col+row)
-                cur="."*i+"Q"+"."*(n-i-1)
-                tmp.append(cur)
-                traceback(row+1,cols,diag1s,diag2s)
+                cols.add(j)
+                posDiag.add(i+j)
+                negDiag.add(i-j)
+                tmp.append("."*j+"Q"+"."*(n-1-j))
+                traceback(i+1)
                 tmp.pop()
-                cols.remove(col)
-                diag1s.remove(row-col)
-                diag2s.remove(col+row)
-        traceback(0,set(),set(),set())
+                cols.remove(j)
+                posDiag.remove(i+j)
+                negDiag.remove(i-j)
+        ans = []
+        tmp = []
+        cols = set()
+        posDiag = set()
+        negDiag = set()
+        traceback(0)
         return ans
+
 
 
 
