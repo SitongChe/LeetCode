@@ -25,16 +25,20 @@
 - [__init__.py](ArraysAndHashing/__init__.py)
 
 ## Backtracking
+- [_1239MaximumLengthofaConcatenatedStringwithUniqueCharacters.py](Backtracking/_1239MaximumLengthofaConcatenatedStringwithUniqueCharacters.py)
 - [_131PalindromePartitioning.py](Backtracking/_131PalindromePartitioning.py)
 - [_17LetterCombinationsofaPhoneNumber.py](Backtracking/_17LetterCombinationsofaPhoneNumber.py)
+- [_1980FindUniqueBinaryString.py](Backtracking/_1980FindUniqueBinaryString.py)
 - [_216CombinationSumIII.py](Backtracking/_216CombinationSumIII.py)
 - [_377CombinationSumIV.py](Backtracking/_377CombinationSumIV.py)
 - [_39CombinationSum.py](Backtracking/_39CombinationSum.py)
 - [_40CombinationSumII.py](Backtracking/_40CombinationSumII.py)
 - [_46Permutations.py](Backtracking/_46Permutations.py)
+- [_473MatchstickstoSquare.py](Backtracking/_473MatchstickstoSquare.py)
 - [_47Permutations||.py](Backtracking/_47Permutations||.py)
 - [_51N-Queens.py](Backtracking/_51N-Queens.py)
 - [_52N-QueensII.py](Backtracking/_52N-QueensII.py)
+- [_698PartitiontoKEqualSumSubsets.py](Backtracking/_698PartitiontoKEqualSumSubsets.py)
 - [_77Combinations.py](Backtracking/_77Combinations.py)
 - [_78Subsets.py](Backtracking/_78Subsets.py)
 - [_79WordSearch.py](Backtracking/_79WordSearch.py)
@@ -89,6 +93,10 @@
 - [_287FindtheDuplicateNumber.py](LinkedList/_287FindtheDuplicateNumber.py)
 - [_2AddTwoNumbers.py](LinkedList/_2AddTwoNumbers.py)
 - [__init__.py](LinkedList/__init__.py)
+
+## Math
+- [_1980FindUniqueBinaryString.py](Math/_1980FindUniqueBinaryString.py)
+- [__init__.py](Math/__init__.py)
 
 ## OpenAI
 - [_304RangeSumQuery2D-Immutable.py](OpenAI/_304RangeSumQuery2D-Immutable.py)
