@@ -105,11 +105,13 @@
 
 ## PriorityQueue
 - [_1046LastStoneWeight.py](PriorityQueue/_1046LastStoneWeight.py)
+- [_1845SeatReservationManager.py](PriorityQueue/_1845SeatReservationManager.py)
 - [_215KthLargestElementinanArray.py](PriorityQueue/_215KthLargestElementinanArray.py)
 - [_295FindMedianfromDataStream.py](PriorityQueue/_295FindMedianfromDataStream.py)
 - [_355DesignTwitter.py](PriorityQueue/_355DesignTwitter.py)
 - [_621TaskScheduler.py](PriorityQueue/_621TaskScheduler.py)
 - [_703KthLargestElementinaStream.py](PriorityQueue/_703KthLargestElementinaStream.py)
+- [_767ReorganizeString.py](PriorityQueue/_767ReorganizeString.py)
 - [_973KClosestPointstoOrigin.py](PriorityQueue/_973KClosestPointstoOrigin.py)
 - [__init__.py](PriorityQueue/__init__.py)
 

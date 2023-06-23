@@ -5,19 +5,16 @@ class Solution:
         count = Counter(tasks)
         maxHeap = [-cnt for cnt in count.values()]
         heapq.heapify(maxHeap)
-        ans = 0
         queue = []
+        ans = 0
         while maxHeap or queue:
-            ans+=1
-            if maxHeap:
-                cnt = heapq.heappop(maxHeap)
-                cnt+=1
-                if cnt != 0:
-                    queue.append([cnt,ans+n])
-            else:
+            ans += 1
+            if not maxHeap:
                 ans = queue[0][1]
-            if queue:
-                if queue[0][1]==ans:
-                    heapq.heappush(maxHeap,queue[0][0])
-                    queue.pop(0)
+            else:
+                cnt = 1 + heapq.heappop(maxHeap)
+                if cnt != 0:
+                    queue.append((cnt,ans+n))
+            if queue and queue[0][1]==ans:
+                heapq.heappush(maxHeap,queue.pop(0)[0])
         return ans

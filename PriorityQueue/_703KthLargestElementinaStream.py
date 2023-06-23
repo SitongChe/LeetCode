@@ -15,5 +15,3 @@ class KthLargest:
             heapq.heappop(self.minHeap)
         return self.minHeap[0]
 
-
-
