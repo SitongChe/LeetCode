@@ -14,6 +14,7 @@
 
 ## ArraysAndHashing
 - [_128LongestConsecutiveSequence.py](ArraysAndHashing/_128LongestConsecutiveSequence.py)
+- [_1985FindtheKthLargestIntegerintheArray.py](ArraysAndHashing/_1985FindtheKthLargestIntegerintheArray.py)
 - [_1TwoSum.py](ArraysAndHashing/_1TwoSum.py)
 - [_217ContainsDuplicate.py](ArraysAndHashing/_217ContainsDuplicate.py)
 - [_238ProductofArrayExceptSelf.py](ArraysAndHashing/_238ProductofArrayExceptSelf.py)
@@ -105,7 +106,10 @@
 
 ## PriorityQueue
 - [_1046LastStoneWeight.py](PriorityQueue/_1046LastStoneWeight.py)
+- [_1094CarPooling.py](PriorityQueue/_1094CarPooling.py)
+- [_1834Single-ThreadedCPU.py](PriorityQueue/_1834Single-ThreadedCPU.py)
 - [_1845SeatReservationManager.py](PriorityQueue/_1845SeatReservationManager.py)
+- [_1882ProcessTasksUsingServers.py](PriorityQueue/_1882ProcessTasksUsingServers.py)
 - [_215KthLargestElementinanArray.py](PriorityQueue/_215KthLargestElementinanArray.py)
 - [_295FindMedianfromDataStream.py](PriorityQueue/_295FindMedianfromDataStream.py)
 - [_355DesignTwitter.py](PriorityQueue/_355DesignTwitter.py)
