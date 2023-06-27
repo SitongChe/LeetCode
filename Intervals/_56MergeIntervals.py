@@ -5,7 +5,7 @@ class Solution:
         n = len(intervals)
         if n == 0:
             return []
-        intervals.sort()
+        intervals.sort(key=lambda x:x[0])
         ans = []
         start = intervals[0][0]
         end = intervals[0][1]
