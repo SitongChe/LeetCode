@@ -1,6 +1,7 @@
 # LeetCode Questions And Answers
 
 ## Airbnb
+- [_1557MinimumNumberofVerticestoReachAllNodes.py](Airbnb/_1557MinimumNumberofVerticestoReachAllNodes.py)
 - [_212WordSearchII.py](Airbnb/_212WordSearchII.py)
 - [_215KthLargestElementinanArray.py](Airbnb/_215KthLargestElementinanArray.py)
 - [_251Flatten2DVector.py](Airbnb/_251Flatten2DVector.py)
@@ -11,7 +12,9 @@
 - [_43MultiplyStrings.py](Airbnb/_43MultiplyStrings.py)
 - [_609FindDuplicateFileinSystem.py](Airbnb/_609FindDuplicateFileinSystem.py)
 - [_68TextJustification.py](Airbnb/_68TextJustification.py)
+- [_756PyramidTransitionMatrix.py](Airbnb/_756PyramidTransitionMatrix.py)
 - [_75SortColors.py](Airbnb/_75SortColors.py)
+- [_787CheapestFlightsWithinKStops.py](Airbnb/_787CheapestFlightsWithinKStops.py)
 - [__init__.py](Airbnb/__init__.py)
 
 ## ArraysAndHashing
