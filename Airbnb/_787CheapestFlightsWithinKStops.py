@@ -1,28 +1,30 @@
-#https://leetcode.com/problems/pyramid-transition-matrix/description/
-#time O(M^N) space O(n)
+#https://leetcode.com/problems/cheapest-flights-within-k-stops/
+#time O(k*E) space O(n)
 class Solution:
-    def pyramidTransition(self, bottom: str, allowed: List[str]) -> bool:
-        def dfs(cur,top,index):
-            if len(cur) == 1:
-                return True
-            if (cur,top,index) in memo:
-                return memo[(cur,top,index)]
-            if len(top)==len(cur)-1:
-                return dfs(top,"",0)
-            curBlock = cur[index:index+2]
-            if curBlock not in allowedMap:
-                memo[(cur,top,index)] = False
-                return False
-            for nextBlock in allowedMap[curBlock]:
-                if dfs(cur,top+nextBlock,index+1):
-                    memo[(cur,top,index)] = True
-                    return True
-            memo[(cur,top,index)] = False
-            return False
+    def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
+        prices = [inf]*n
+        prices[src]=0
+        for i in range(k+1):
+            tmpPrices = prices.copy()
+            for u,v,c in flights:
+                if prices[u]==inf:
+                    continue
+                if prices[u]+c<tmpPrices[v]:
+                    tmpPrices[v]=prices[u]+c
+            prices = tmpPrices
+        return prices[dst] if prices[dst]!=inf else -1
 
-        memo = {}
-        allowedMap = defaultdict(list)
-        for pattern in allowed:
-            allowedMap[pattern[:2]].append(pattern[2])
-        return dfs(bottom,"",0)
-
+class Solution:
+    def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
+        graph = defaultdict(dict)
+        for a,b,p in flights:
+            graph[a][b]=p
+        heap = [[0,src,k+1]]
+        while heap:
+            p,i,k = heapq.heappop(heap)
+            if i == dst:
+                return p
+            if k>0:
+                for j in graph[i]:
+                    heapq.heappush(heap,[p+graph[i][j],j,k-1])
+        return -1

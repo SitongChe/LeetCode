@@ -65,6 +65,7 @@
 - [_127WordLadder.py](Graph/_127WordLadder.py)
 - [_130SurroundedRegions.py](Graph/_130SurroundedRegions.py)
 - [_133CloneGraph.py](Graph/_133CloneGraph.py)
+- [_1514PathwithMaximumProbability.py](Graph/_1514PathwithMaximumProbability.py)
 - [_1584MinCosttoConnectAllPoints.py](Graph/_1584MinCosttoConnectAllPoints.py)
 - [_200NumberofIslands.py](Graph/_200NumberofIslands.py)
 - [_207CourseSchedule.py](Graph/_207CourseSchedule.py)

@@ -4,20 +4,20 @@
 class Solution:
     def minCostConnectPoints(self, points: List[List[int]]) -> int:
         n = len(points)
-        minHeap = [[0,points[0][0],points[0][1]]]
-        ans = 0
+        heap = [[0,points[0][0],points[0][1]]]
         visited = set()
-        while minHeap:
-            dist,x,y = heapq.heappop(minHeap)
-            if (x,y) in visited:
-                continue
-            ans += dist
-            visited.add((x,y))
-            for xx,yy in points:
-                if (xx,yy) not in visited:
-                    val = abs(xx-x)+abs(yy-y)
-                    heapq.heappush(minHeap,[val,xx,yy])
+        ans = 0
+        while heap:
+            dis,u,v = heapq.heappop(heap)
+            if (u,v) not in visited:
+                ans += dis
+                visited.add((u,v))
+                for i,j in points:
+                    if (i,j) not in visited:
+                        val = abs(i-u)+abs(j-v)
+                        heapq.heappush(heap,[val,i,j])
         return ans
+
 
 
 

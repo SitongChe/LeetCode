@@ -1,44 +1,27 @@
-#https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/description/
-#time O(E) space O(n)
-#indegree = 0
+#https://leetcode.com/problems/pyramid-transition-matrix/description/
+#time O(M^N) space O(n)
 class Solution:
-    def findSmallestSetOfVertices(self, n: int, edges: List[List[int]]) -> List[int]:
-        return list(set(range(n))-set(v for u,v in edges))
+    def pyramidTransition(self, bottom: str, allowed: List[str]) -> bool:
+        def dfs(cur,top,index):
+            if len(cur) == 1:
+                return True
+            if (cur,top,index) in memo:
+                return memo[(cur,top,index)]
+            if len(top)==len(cur)-1:
+                return dfs(top,"",0)
+            curBlock = cur[index:index+2]
+            if curBlock not in allowedMap:
+                memo[(cur,top,index)] = False
+                return False
+            for nextBlock in allowedMap[curBlock]:
+                if dfs(cur,top+nextBlock,index+1):
+                    memo[(cur,top,index)] = True
+                    return True
+            memo[(cur,top,index)] = False
+            return False
 
-#Union find
-#time O(E) space O(n)
-class Solution:
-    def findSmallestSetOfVertices(self, n: int, edges: List[List[int]]) -> List[int]:
-        uf = {}
-        def find(x):
-            uf.setdefault(x, x)
-            if x != uf[x]:
-                uf[x] = find(uf[x])
-            return uf[x]
-        for u,v in edges:
-            uf[v]=find(u)
-        return set([find(i) for i in range(n)])
-
-#dfs
-#time O(E) space O(n)
-class Solution:
-    def findSmallestSetOfVertices(self, n: int, edges: List[List[int]]) -> List[int]:
-        def dfs(u):
-            visited.add(u)
-            for v in graph[u]:
-                if v not in visited:
-                    dfs(v)
-                elif v in ans:
-                    ans.remove(v)
-        ans = set()
-        visited = set()
-        graph = defaultdict(list)
-        for u,v in edges:
-            graph[u].append(v)
-        for i in range(n):
-            if i not in visited:
-                ans.add(i)
-                dfs(i)
-        
-        return list(ans)
-                
+        memo = {}
+        allowedMap = defaultdict(list)
+        for pattern in allowed:
+            allowedMap[pattern[:2]].append(pattern[2])
+        return dfs(bottom,"",0)

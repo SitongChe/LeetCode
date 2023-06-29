@@ -3,26 +3,24 @@
 #traceback
 class Solution:
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
-        tickets.sort()
-        adjs = defaultdict(list)
-        for u,v in tickets:
-            adjs[u].append(v)
-        ans = []
         def traceback(cur):
-            ans.append(cur)
-            if len(ans)==len(tickets)+1:
+            if len(ans) == len(tickets)+1:
                 return True
-            if cur not in adjs:
-                ans.pop()
-                return False
-            size = len(adjs[cur])
-            for i in range(size):
-                node = adjs[cur].pop(0)
-                if traceback(node):
-                    return True
-                adjs[cur].append(node)
-            ans.pop()
+            if cur in graph:
+                size = len(graph[cur])
+                for i in range(size):
+                    node = graph[cur].popleft()
+                    ans.append(node)
+                    if traceback(node):
+                        return True
+                    ans.pop()
+                    graph[cur].append(node)
             return False
+
+        tickets.sort()
+        graph = defaultdict(deque)
+        for u,v in tickets:
+            graph[u].append(v)
+        ans = ["JFK"]
         traceback("JFK")
         return ans
-        
