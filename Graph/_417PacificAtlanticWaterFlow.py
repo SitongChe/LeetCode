@@ -3,21 +3,18 @@
 #dfs
 class Solution:
     def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
-        result = []
+        def dfs(i,j,water,prevHeight):
+            if i<0 or i>=m or j<0 or j>=n or visited[i][j]==water or visited[i][j]==3 or heights[i][j]<prevHeight:
+                return
+            visited[i][j]+=water
+            if visited[i][j]>=3:
+                visited[i][j]=3
+            dfs(i+1,j,water,heights[i][j])
+            dfs(i-1,j,water,heights[i][j])
+            dfs(i,j+1,water,heights[i][j])
+            dfs(i,j-1,water,heights[i][j])
         m = len(heights)
         n = len(heights[0])
-        def dfs(i,j,ocean,prev):
-            if i <0 or i>=m or j<0 or j>=n or visited[i][j]==3 or visited[i][j]==ocean or heights[i][j]<prev:
-                return
-            prev = heights[i][j]
-            visited[i][j]+=ocean
-            if visited[i][j]>=3:
-                result.append([i,j])
-                visited[i][j]=3
-            dfs(i+1,j,ocean,prev)
-            dfs(i-1,j,ocean,prev)
-            dfs(i,j+1,ocean,prev)
-            dfs(i,j-1,ocean,prev)
         visited = [[0]*n for i in range(m)]
         for i in range(m):
             dfs(i,0,1,heights[i][0])
@@ -25,8 +22,12 @@ class Solution:
         for j in range(n):
             dfs(0,j,1,heights[0][j])
             dfs(m-1,j,2,heights[m-1][j])
-        return result
-
+        ans = []
+        for i in range(m):
+            for j in range(n):
+                if visited[i][j]==3:
+                    ans.append([i,j])
+        return ans
                     
 
 
