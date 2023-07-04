@@ -187,11 +187,13 @@
 - [_125ValidPalindrome.py](TwoPointers/_125ValidPalindrome.py)
 - [_15ThreeSum.py](TwoPointers/_15ThreeSum.py)
 - [_167TwoSumII-InputArrayIsSorted.py](TwoPointers/_167TwoSumII-InputArrayIsSorted.py)
+- [_184Sum.py](TwoPointers/_184Sum.py)
 - [_1984MinimumDifferenceBetweenHighestandLowestofKScores.py](TwoPointers/_1984MinimumDifferenceBetweenHighestandLowestofKScores.py)
 - [_26RemoveDuplicatesfromSortedArray.py](TwoPointers/_26RemoveDuplicatesfromSortedArray.py)
 - [_283MoveZeroes.py](TwoPointers/_283MoveZeroes.py)
 - [_344ReverseString.py](TwoPointers/_344ReverseString.py)
 - [_42TrappingRainWater.py](TwoPointers/_42TrappingRainWater.py)
+- [_80RemoveDuplicatesfromSortedArrayII.py](TwoPointers/_80RemoveDuplicatesfromSortedArrayII.py)
 - [_88MergeSortedArray.py](TwoPointers/_88MergeSortedArray.py)
 - [__init__.py](TwoPointers/__init__.py)
 

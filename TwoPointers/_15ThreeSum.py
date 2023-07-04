@@ -2,32 +2,28 @@
 #time O(n^2), space O(1)
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        nums = sorted(nums)
+        nums.sort()
         n = len(nums)
-        if n ==0:
-            return []
         ans = []
         for i in range(n):
-            if nums[i]>0:
-                return ans
-            if(i-1>=0 and nums[i]==nums[i-1]):
+            if i-1>=0 and nums[i]==nums[i-1]:
                 continue
-            j = i+1
-            k = n-1
-            while j<k:
-                sum = nums[i]+nums[j]+nums[k]
-                if sum==0:
-                    ans.append([nums[i],nums[j],nums[k]])
-                    while(j+1<k and nums[j]==nums[j+1]):
-                        j+=1
-                    j+=1
-                    k-=1
+            if nums[i]>0:
+                break
+            l = i+1
+            r = n-1
+            while l<r:
+                sum = nums[i]+nums[l]+nums[r]
+                if sum == 0:
+                    ans.append([nums[i],nums[l],nums[r]])
+                    while l+1<r and nums[l]==nums[l+1]:
+                        l+=1
+                    l+=1
+                    r-=1
                 elif sum<0:
-                    j+=1
+                    l+=1
                 else:
-                    k-=1
-            
+                    r-=1
         return ans
-
         
                 

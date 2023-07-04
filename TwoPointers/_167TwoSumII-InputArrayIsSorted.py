@@ -3,16 +3,15 @@
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         n = len(numbers)
-        if n == 0:
-            return []
-        i = 0
-        j = n-1
-        while i<j:
-            sum = numbers[i]+numbers[j]
+        l = 0
+        r = n-1
+        while l<r:
+            sum = numbers[l]+numbers[r]
+            if sum == target:
+                return [l+1,r+1]
             if sum<target:
-                i+=1
-            elif sum>target:
-                j-=1
+                l+=1
             else:
-                return [i+1,j+1]
+                r-=1
         return []
+            
