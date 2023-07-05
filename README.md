@@ -28,6 +28,7 @@
 - [_36ValidSudoku.py](ArraysAndHashing/_36ValidSudoku.py)
 - [_380InsertDeleteGetRandomO(1).py](ArraysAndHashing/_380InsertDeleteGetRandomO(1).py)
 - [_49GroupAnagrams.py](ArraysAndHashing/_49GroupAnagrams.py)
+- [_706DesignHashMap.py](ArraysAndHashing/_706DesignHashMap.py)
 - [_912SortanArray.py](ArraysAndHashing/_912SortanArray.py)
 - [__init__.py](ArraysAndHashing/__init__.py)
 
