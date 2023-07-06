@@ -24,6 +24,7 @@
 - [_217ContainsDuplicate.py](ArraysAndHashing/_217ContainsDuplicate.py)
 - [_238ProductofArrayExceptSelf.py](ArraysAndHashing/_238ProductofArrayExceptSelf.py)
 - [_242ValidAnagram.py](ArraysAndHashing/_242ValidAnagram.py)
+- [_290WordPattern.py](ArraysAndHashing/_290WordPattern.py)
 - [_347TopKFrequentElements.py](ArraysAndHashing/_347TopKFrequentElements.py)
 - [_36ValidSudoku.py](ArraysAndHashing/_36ValidSudoku.py)
 - [_380InsertDeleteGetRandomO(1).py](ArraysAndHashing/_380InsertDeleteGetRandomO(1).py)
