@@ -18,6 +18,7 @@
 - [__init__.py](Airbnb/__init__.py)
 
 ## ArraysAndHashing
+- [_1189MaximumNumberofBalloons.py](ArraysAndHashing/_1189MaximumNumberofBalloons.py)
 - [_128LongestConsecutiveSequence.py](ArraysAndHashing/_128LongestConsecutiveSequence.py)
 - [_1985FindtheKthLargestIntegerintheArray.py](ArraysAndHashing/_1985FindtheKthLargestIntegerintheArray.py)
 - [_1TwoSum.py](ArraysAndHashing/_1TwoSum.py)
@@ -25,11 +26,15 @@
 - [_238ProductofArrayExceptSelf.py](ArraysAndHashing/_238ProductofArrayExceptSelf.py)
 - [_242ValidAnagram.py](ArraysAndHashing/_242ValidAnagram.py)
 - [_290WordPattern.py](ArraysAndHashing/_290WordPattern.py)
+- [_303RangeSumQuery-Immutable.py](ArraysAndHashing/_303RangeSumQuery-Immutable.py)
 - [_347TopKFrequentElements.py](ArraysAndHashing/_347TopKFrequentElements.py)
 - [_36ValidSudoku.py](ArraysAndHashing/_36ValidSudoku.py)
 - [_380InsertDeleteGetRandomO(1).py](ArraysAndHashing/_380InsertDeleteGetRandomO(1).py)
+- [_448FindAllNumbersDisappearedinanArray.py](ArraysAndHashing/_448FindAllNumbersDisappearedinanArray.py)
+- [_496NextGreaterElementI.py](ArraysAndHashing/_496NextGreaterElementI.py)
 - [_49GroupAnagrams.py](ArraysAndHashing/_49GroupAnagrams.py)
 - [_706DesignHashMap.py](ArraysAndHashing/_706DesignHashMap.py)
+- [_724FindPivotIndex.py](ArraysAndHashing/_724FindPivotIndex.py)
 - [_912SortanArray.py](ArraysAndHashing/_912SortanArray.py)
 - [__init__.py](ArraysAndHashing/__init__.py)
 
