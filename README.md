@@ -20,6 +20,7 @@
 ## ArraysAndHashing
 - [_1189MaximumNumberofBalloons.py](ArraysAndHashing/_1189MaximumNumberofBalloons.py)
 - [_128LongestConsecutiveSequence.py](ArraysAndHashing/_128LongestConsecutiveSequence.py)
+- [_169MajorityElement.py](ArraysAndHashing/_169MajorityElement.py)
 - [_1985FindtheKthLargestIntegerintheArray.py](ArraysAndHashing/_1985FindtheKthLargestIntegerintheArray.py)
 - [_1TwoSum.py](ArraysAndHashing/_1TwoSum.py)
 - [_217ContainsDuplicate.py](ArraysAndHashing/_217ContainsDuplicate.py)
@@ -33,6 +34,7 @@
 - [_448FindAllNumbersDisappearedinanArray.py](ArraysAndHashing/_448FindAllNumbersDisappearedinanArray.py)
 - [_496NextGreaterElementI.py](ArraysAndHashing/_496NextGreaterElementI.py)
 - [_49GroupAnagrams.py](ArraysAndHashing/_49GroupAnagrams.py)
+- [_605CanPlaceFlowers.py](ArraysAndHashing/_605CanPlaceFlowers.py)
 - [_706DesignHashMap.py](ArraysAndHashing/_706DesignHashMap.py)
 - [_724FindPivotIndex.py](ArraysAndHashing/_724FindPivotIndex.py)
 - [_912SortanArray.py](ArraysAndHashing/_912SortanArray.py)
