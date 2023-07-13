@@ -18,9 +18,13 @@
 - [__init__.py](Airbnb/__init__.py)
 
 ## ArraysAndHashing
+- [_1023CamelcaseMatching.py](ArraysAndHashing/_1023CamelcaseMatching.py)
 - [_1189MaximumNumberofBalloons.py](ArraysAndHashing/_1189MaximumNumberofBalloons.py)
 - [_128LongestConsecutiveSequence.py](ArraysAndHashing/_128LongestConsecutiveSequence.py)
+- [_1392LongestHappyPrefix.py](ArraysAndHashing/_1392LongestHappyPrefix.py)
+- [_1455CheckIfaWordOccursAsaPrefixofAnyWordinaSentence.py](ArraysAndHashing/_1455CheckIfaWordOccursAsaPrefixofAnyWordinaSentence.py)
 - [_14LongestCommonPrefix.py](ArraysAndHashing/_14LongestCommonPrefix.py)
+- [_1668MaximumRepeatingSubstring.py](ArraysAndHashing/_1668MaximumRepeatingSubstring.py)
 - [_169MajorityElement.py](ArraysAndHashing/_169MajorityElement.py)
 - [_1985FindtheKthLargestIntegerintheArray.py](ArraysAndHashing/_1985FindtheKthLargestIntegerintheArray.py)
 - [_1TwoSum.py](ArraysAndHashing/_1TwoSum.py)
@@ -46,6 +50,7 @@
 - [_686RepeatedStringMatch.py](ArraysAndHashing/_686RepeatedStringMatch.py)
 - [_706DesignHashMap.py](ArraysAndHashing/_706DesignHashMap.py)
 - [_724FindPivotIndex.py](ArraysAndHashing/_724FindPivotIndex.py)
+- [_796RotateString.py](ArraysAndHashing/_796RotateString.py)
 - [_912SortanArray.py](ArraysAndHashing/_912SortanArray.py)
 - [_929UniqueEmailAddresses.py](ArraysAndHashing/_929UniqueEmailAddresses.py)
 - [__init__.py](ArraysAndHashing/__init__.py)
