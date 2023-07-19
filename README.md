@@ -170,6 +170,8 @@
 
 ## SlidingWindow
 - [_121BestTimetoBuyandSellStock.py](SlidingWindow/_121BestTimetoBuyandSellStock.py)
+- [_1343NumberofSub-arraysofSizeKandAverageGreaterthanorEqualtoThreshold.py](SlidingWindow/_1343NumberofSub-arraysofSizeKandAverageGreaterthanorEqualtoThreshold.py)
+- [_219ContainsDuplicateII.py](SlidingWindow/_219ContainsDuplicateII.py)
 - [_239SlidingWindowMaximum.py](SlidingWindow/_239SlidingWindowMaximum.py)
 - [_3LongestSubstringWithoutRepeatingCharacters.py](SlidingWindow/_3LongestSubstringWithoutRepeatingCharacters.py)
 - [_424LongestRepeatingCharacterReplacement.py](SlidingWindow/_424LongestRepeatingCharacterReplacement.py)
