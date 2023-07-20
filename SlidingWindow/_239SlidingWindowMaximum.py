@@ -3,15 +3,16 @@
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
         stack = []
-        start = end = 0
+        l = 0
         ans = []
-        for end in range(len(nums)):
-            while stack and nums[stack[-1]]<nums[end]:
+        for r in range(len(nums)):
+            while stack and nums[stack[-1]]<nums[r]:
                 stack.pop()
-            stack.append(end)
-            if start>stack[0]:
+            stack.append(r)
+            if l>stack[0]:
                 stack.pop(0)
-            if end>=k-1:
+            if r>=k-1:
                 ans.append(nums[stack[0]])
-                start+=1
+                l+=1
         return ans
+

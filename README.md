@@ -171,11 +171,18 @@
 ## SlidingWindow
 - [_121BestTimetoBuyandSellStock.py](SlidingWindow/_121BestTimetoBuyandSellStock.py)
 - [_1343NumberofSub-arraysofSizeKandAverageGreaterthanorEqualtoThreshold.py](SlidingWindow/_1343NumberofSub-arraysofSizeKandAverageGreaterthanorEqualtoThreshold.py)
+- [_1658MinimumOperationstoReduceXtoZero.py](SlidingWindow/_1658MinimumOperationstoReduceXtoZero.py)
+- [_1838FrequencyoftheMostFrequentElement.py](SlidingWindow/_1838FrequencyoftheMostFrequentElement.py)
+- [_1888MinimumNumberofFlipstoMaketheBinaryStringAlternating.py](SlidingWindow/_1888MinimumNumberofFlipstoMaketheBinaryStringAlternating.py)
+- [_2090KRadiusSubarrayAverages.py](SlidingWindow/_2090KRadiusSubarrayAverages.py)
+- [_209MinimumSizeSubarraySum.py](SlidingWindow/_209MinimumSizeSubarraySum.py)
 - [_219ContainsDuplicateII.py](SlidingWindow/_219ContainsDuplicateII.py)
 - [_239SlidingWindowMaximum.py](SlidingWindow/_239SlidingWindowMaximum.py)
+- [_30SubstringwithConcatenationofAllWords.py](SlidingWindow/_30SubstringwithConcatenationofAllWords.py)
 - [_3LongestSubstringWithoutRepeatingCharacters.py](SlidingWindow/_3LongestSubstringWithoutRepeatingCharacters.py)
 - [_424LongestRepeatingCharacterReplacement.py](SlidingWindow/_424LongestRepeatingCharacterReplacement.py)
 - [_567PermutationinString.py](SlidingWindow/_567PermutationinString.py)
+- [_658FindKClosestElements.py](SlidingWindow/_658FindKClosestElements.py)
 - [_76MinimumWindowSubstring.py](SlidingWindow/_76MinimumWindowSubstring.py)
 - [__init__.py](SlidingWindow/__init__.py)
 
