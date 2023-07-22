@@ -187,12 +187,17 @@
 - [__init__.py](SlidingWindow/__init__.py)
 
 ## Stack
+- [_1209RemoveAllAdjacentDuplicatesinStringII.py](Stack/_1209RemoveAllAdjacentDuplicatesinStringII.py)
 - [_150EvaluateReversePolishNotation.py](Stack/_150EvaluateReversePolishNotation.py)
 - [_155MinStack.py](Stack/_155MinStack.py)
 - [_20ValidParentheses.py](Stack/_20ValidParentheses.py)
 - [_225ImplementStackusingQueues.py](Stack/_225ImplementStackusingQueues.py)
 - [_22GenerateParentheses.py](Stack/_22GenerateParentheses.py)
+- [_394DecodeString.py](Stack/_394DecodeString.py)
+- [_402RemoveKDigits.py](Stack/_402RemoveKDigits.py)
+- [_456132Pattern.py](Stack/_456132Pattern.py)
 - [_682BaseballGame.py](Stack/_682BaseballGame.py)
+- [_71SimplifyPath.py](Stack/_71SimplifyPath.py)
 - [_735AsteroidCollision.py](Stack/_735AsteroidCollision.py)
 - [_739DailyTemperatures.py](Stack/_739DailyTemperatures.py)
 - [_84LargestRectangleinHistogram.py](Stack/_84LargestRectangleinHistogram.py)
