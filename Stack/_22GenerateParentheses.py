@@ -2,19 +2,14 @@
 #time O(C(n)) space O(N)
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        stack=[]
-        ans = []
-        def traceback(openN,closedN):
-            if openN == closedN == n:
-                ans.append("".join(stack))
+        def traceback(left,right,tmp):
+            if left == n and right == n:
+                ans.append(tmp)
                 return
-            if openN<n:
-                stack.append("(")
-                traceback(openN+1,closedN)
-                stack.pop()
-            if closedN<openN:
-                stack.append(")")
-                traceback(openN,closedN+1)
-                stack.pop()
-        traceback(0,0)
+            if left<n:
+                traceback(left+1,right,tmp+"(")
+            if left>right:
+                traceback(left,right+1,tmp+")")
+        ans = []
+        traceback(0,0,"")
         return ans
