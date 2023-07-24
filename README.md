@@ -84,10 +84,14 @@
 ## BinarySearch
 - [_153FindMinimuminRotatedSortedArray.py](BinarySearch/_153FindMinimuminRotatedSortedArray.py)
 - [_33SearchinRotatedSortedArray.py](BinarySearch/_33SearchinRotatedSortedArray.py)
+- [_35SearchInsertPosition.py](BinarySearch/_35SearchInsertPosition.py)
+- [_367ValidPerfectSquare.py](BinarySearch/_367ValidPerfectSquare.py)
+- [_441ArrangingCoins.py](BinarySearch/_441ArrangingCoins.py)
 - [_4MedianofTwoSortedArrays.py](BinarySearch/_4MedianofTwoSortedArrays.py)
 - [_704BinarySearch.py](BinarySearch/_704BinarySearch.py)
 - [_74Searcha2DMatrix.py](BinarySearch/_74Searcha2DMatrix.py)
 - [_875KokoEatingBananas.py](BinarySearch/_875KokoEatingBananas.py)
+- [_977SquaresofaSortedArray.py](BinarySearch/_977SquaresofaSortedArray.py)
 - [_981TimeBasedKey-ValueStore.py](BinarySearch/_981TimeBasedKey-ValueStore.py)
 - [__init__.py](BinarySearch/__init__.py)
 
@@ -202,6 +206,7 @@
 - [_739DailyTemperatures.py](Stack/_739DailyTemperatures.py)
 - [_84LargestRectangleinHistogram.py](Stack/_84LargestRectangleinHistogram.py)
 - [_853CarFleet.py](Stack/_853CarFleet.py)
+- [_895MaximumFrequencyStack.py](Stack/_895MaximumFrequencyStack.py)
 - [__init__.py](Stack/__init__.py)
 
 ## Trees
