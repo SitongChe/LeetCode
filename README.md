@@ -82,10 +82,15 @@
 - [__init__.py](Backtracking/__init__.py)
 
 ## BinarySearch
+- [_116PopulatingNextRightPointersinEachNode.py](BinarySearch/_116PopulatingNextRightPointersinEachNode.py)
+- [_1268SearchSuggestionsSystem.py](BinarySearch/_1268SearchSuggestionsSystem.py)
 - [_153FindMinimuminRotatedSortedArray.py](BinarySearch/_153FindMinimuminRotatedSortedArray.py)
+- [_1898MaximumNumberofRemovableCharacters.py](BinarySearch/_1898MaximumNumberofRemovableCharacters.py)
 - [_33SearchinRotatedSortedArray.py](BinarySearch/_33SearchinRotatedSortedArray.py)
+- [_34FindFirstandLastPositionofElementinSortedArray.py](BinarySearch/_34FindFirstandLastPositionofElementinSortedArray.py)
 - [_35SearchInsertPosition.py](BinarySearch/_35SearchInsertPosition.py)
 - [_367ValidPerfectSquare.py](BinarySearch/_367ValidPerfectSquare.py)
+- [_410SplitArrayLargestSum.py](BinarySearch/_410SplitArrayLargestSum.py)
 - [_441ArrangingCoins.py](BinarySearch/_441ArrangingCoins.py)
 - [_4MedianofTwoSortedArrays.py](BinarySearch/_4MedianofTwoSortedArrays.py)
 - [_704BinarySearch.py](BinarySearch/_704BinarySearch.py)
@@ -228,6 +233,7 @@
 - [__init__.py](Trees/__init__.py)
 
 ## Tries
+- [_1268SearchSuggestionsSystem.py](Tries/_1268SearchSuggestionsSystem.py)
 - [_208ImplementTrie.py](Tries/_208ImplementTrie.py)
 - [_211DesignAddandSearchWordsDataStructure.py](Tries/_211DesignAddandSearchWordsDataStructure.py)
 - [_212WordSearchII.py](Tries/_212WordSearchII.py)

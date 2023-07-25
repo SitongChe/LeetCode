@@ -2,25 +2,28 @@
 #time  O(log(min(N, M))), space O(1)
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        A = nums1
+        B = nums2
+        if len(B)<len(A):
+            A,B = B,A
         left = 0
-        if len(nums1)>len(nums2):
-            nums1,nums2 = nums2,nums1
-        right = len(nums1)*2
-        total = len(nums1)+len(nums2)
+        right = len(A)-1
+        total = len(A)+len(B)
+        half = total//2
         while True:
-            mid = left+(right-left)//2
-            mid2 = total-mid
-            Aleft = nums1[(mid-1)//2] if mid>0 else -inf
-            Aright = nums1[mid//2] if mid<len(nums1)*2 else inf
-            Bleft = nums2[(mid2-1)//2] if mid2>0 else -inf
-            Bright = nums2[mid2//2] if mid2<len(nums2)*2 else inf
-
-            if Aleft<=Bright and Aright>=Bleft:
+            i = left+(right-left)//2
+            j = half-i-2
+            Aleft = A[i] if i>=0 else -inf
+            Aright = A[i+1] if i+1<len(A) else inf
+            Bleft = B[j] if j>=0 else -inf
+            Bright = B[j+1] if j+1<len(B) else inf
+            if Aleft<=Bright and Bleft<=Aright:
                 if total%2:
                     return min(Aright,Bright)
                 else:
                     return (max(Aleft,Bleft)+min(Aright,Bright))/2
             elif Aleft>Bright:
-                right = mid-1
+                right = i-1
             else:
-                left = mid+1
+                left = i+1
+
