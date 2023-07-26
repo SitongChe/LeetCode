@@ -11,29 +11,31 @@ class Solution:
         """
         Do not return anything, modify head in-place instead.
         """
-        def reverse(node):
-            if not node or not node.next:
-                return node
-            l = reverse(node.next)
-            node.next.next = node
-            node.next = None
-            return l
-
+        def reverse(head):
+            if not head or not head.next:
+                return head
+            prev = None
+            cur = head
+            while cur:
+                next = cur.next
+                cur.next = prev
+                prev = cur
+                cur = next
+            return prev
         slow = head
         fast = head
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-        last = reverse(slow.next)
+        l1 = head
+        l2 = reverse(slow.next)
         slow.next = None
-        cur = head
-        while last:
-            next = cur.next
-            next2 = last.next
-            cur.next = last
-            last.next = next
-            cur = next
-            last = next2
-
+        while l2:
+            next1 = l1.next
+            next2 = l2.next
+            l1.next = l2
+            l2.next = next1
+            l1 = next1
+            l2 = next2
 
 
