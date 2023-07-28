@@ -2,28 +2,40 @@
 #time  O(log(min(N, M))), space O(1)
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        A = nums1
-        B = nums2
-        if len(B)<len(A):
-            A,B = B,A
-        left = 0
-        right = len(A)-1
-        total = len(A)+len(B)
-        half = total//2
-        while True:
-            i = left+(right-left)//2
-            j = half-i-2
-            Aleft = A[i] if i>=0 else -inf
-            Aright = A[i+1] if i+1<len(A) else inf
-            Bleft = B[j] if j>=0 else -inf
-            Bright = B[j+1] if j+1<len(B) else inf
-            if Aleft<=Bright and Bleft<=Aright:
-                if total%2:
-                    return min(Aright,Bright)
-                else:
-                    return (max(Aleft,Bleft)+min(Aright,Bright))/2
-            elif Aleft>Bright:
-                right = i-1
-            else:
-                left = i+1
+        def check(mid):
+            mid2 = half-mid-2
+            num1Left = nums1[mid] if mid>= 0 else -inf
+            num2Left = nums2[mid2] if mid2>=0 else -inf
+            num1Right = nums1[mid+1] if mid+1<len(nums1) else inf
+            num2Right = nums2[mid2+1] if mid2+1<len(nums2) else inf
 
+            if num1Left<=num2Right and num2Left<=num1Right:
+                if total%2:
+                    self.ans = min(num1Right,num2Right)
+                else:
+                    self.ans = (max(num1Left,num2Left)+min(num1Right,num2Right))/2
+            return [num1Left,num2Left,num1Right,num2Right]
+
+        if len(nums2)<len(nums1):
+            nums1,nums2 = nums2,nums1
+        left = -1
+        right = len(nums1)-1
+        total = len(nums1)+len(nums2)
+        half = total//2
+        self.ans = inf
+        while left+1<right:
+            mid = left+(right-left)//2
+            num1Left,num2Left,num1Right,num2Right = check(mid)
+            if self.ans != inf:
+                return self.ans
+            if num1Left>num2Right:
+                right = mid
+            else:
+                left = mid
+
+        check(left)
+        if self.ans != inf:
+            return self.ans
+        check(right)
+        if self.ans != inf:
+            return self.ans

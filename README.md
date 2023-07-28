@@ -141,6 +141,7 @@
 - [_143ReorderList.py](LinkedList/_143ReorderList.py)
 - [_146LRUCache.py](LinkedList/_146LRUCache.py)
 - [_1472DesignBrowserHistory.py](LinkedList/_1472DesignBrowserHistory.py)
+- [_147InsertionSortList.py](LinkedList/_147InsertionSortList.py)
 - [_148SortList.py](LinkedList/_148SortList.py)
 - [_160IntersectionofTwoLinkedLists.py](LinkedList/_160IntersectionofTwoLinkedLists.py)
 - [_19RemoveNthNodeFromEndofList.py](LinkedList/_19RemoveNthNodeFromEndofList.py)
@@ -155,10 +156,12 @@
 - [_287FindtheDuplicateNumber.py](LinkedList/_287FindtheDuplicateNumber.py)
 - [_2AddTwoNumbers.py](LinkedList/_2AddTwoNumbers.py)
 - [_61RotateList.py](LinkedList/_61RotateList.py)
+- [_622DesignCircularQueue.py](LinkedList/_622DesignCircularQueue.py)
 - [_707DesignLinkedList.py](LinkedList/_707DesignLinkedList.py)
 - [_83RemoveDuplicatesfromSortedList.py](LinkedList/_83RemoveDuplicatesfromSortedList.py)
 - [_86PartitionList.py](LinkedList/_86PartitionList.py)
 - [_876MiddleoftheLinkedList.py](LinkedList/_876MiddleoftheLinkedList.py)
+- [_92ReverseLinkedListII.py](LinkedList/_92ReverseLinkedListII.py)
 - [__init__.py](LinkedList/__init__.py)
 
 ## Math
@@ -235,6 +238,8 @@
 - [_110BalancedBinaryTree.py](Trees/_110BalancedBinaryTree.py)
 - [_124BinaryTreeMaximumPathSum.py](Trees/_124BinaryTreeMaximumPathSum.py)
 - [_1448CountGoodNodesinBinaryTree.py](Trees/_1448CountGoodNodesinBinaryTree.py)
+- [_144BinaryTreePreorderTraversal.py](Trees/_144BinaryTreePreorderTraversal.py)
+- [_145BinaryTreePostorderTraversal.py](Trees/_145BinaryTreePostorderTraversal.py)
 - [_199BinaryTreeRightSideView.py](Trees/_199BinaryTreeRightSideView.py)
 - [_226InvertBinaryTree.py](Trees/_226InvertBinaryTree.py)
 - [_230KthSmallestElementinaBST.py](Trees/_230KthSmallestElementinaBST.py)
@@ -242,6 +247,7 @@
 - [_297SerializeandDeserializeBinaryTree.py](Trees/_297SerializeandDeserializeBinaryTree.py)
 - [_543DiameterofBinaryTree.py](Trees/_543DiameterofBinaryTree.py)
 - [_572SubtreeofAnotherTree.py](Trees/_572SubtreeofAnotherTree.py)
+- [_94BinaryTreeInorderTraversal.py](Trees/_94BinaryTreeInorderTraversal.py)
 - [_98ValidateBinarySearchTree.py](Trees/_98ValidateBinarySearchTree.py)
 - [__init__.py](Trees/__init__.py)
 
