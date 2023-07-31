@@ -22,4 +22,25 @@ class Solution:
             inorder(root.right)
         inorder(root)
         return self.ans
+        
+class Solution:
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+        if not root:
+            return True
+        stack = [[root,False]]
+        prev = None
+        while stack:
+            cur,visited = stack.pop()
+            if cur:
+                if visited:
+                    if prev and prev.val>=cur.val:
+                        return False
+                    prev = cur
+                else:
+                    stack.append([cur.right,False])
+                    stack.append([cur,True])
+                    stack.append([cur.left,False])
+        return True
+
+
 
