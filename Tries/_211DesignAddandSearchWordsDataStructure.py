@@ -9,8 +9,8 @@ class WordDictionary:
 
     def __init__(self):
         self.root = TreeNode()
-
         
+
     def addWord(self, word: str) -> None:
         cur = self.root
         for w in word:
@@ -18,23 +18,31 @@ class WordDictionary:
                 cur.chars[w]=TreeNode()
             cur = cur.chars[w]
         cur.isWord = True
-    
+        
 
     def search(self, word: str) -> bool:
-        def dfs(word,cur):
-            for i in range(len(word)):
-                if word[i]=='.':
+        def dfs(cur,index):
+            for i in range(index,n):
+                w = word[i]
+                if w!='.':
+                    if w not in cur.chars:
+                        return False
+                    cur = cur.chars[w]
+                else:
                     for node in cur.chars.values():
-                        if dfs(word[i+1:],node):
+                        if dfs(node,i+1):
                             return True
                     return False
-                else:
-                    if word[i] not in cur.chars:
-                        return False
-                    cur = cur.chars[word[i]]
             return cur.isWord
-        return dfs(word,self.root)
-        
+        n = len(word)
+        return dfs(self.root,0)
+
+
+
+# Your WordDictionary object will be instantiated and called as such:
+# obj = WordDictionary()
+# obj.addWord(word)
+# param_2 = obj.search(word)
 
 
 # Your WordDictionary object will be instantiated and called as such:

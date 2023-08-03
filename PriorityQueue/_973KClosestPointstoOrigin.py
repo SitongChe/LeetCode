@@ -12,4 +12,11 @@ class Solution:
             dist,x,y = heapq.heappop(minHeap)
             ans.append([x,y])
         return ans
-        
+     
+class Solution:
+    def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+        maxHeap = [[-x*x-y*y,[x,y]] for x,y in points]
+        heapq.heapify(maxHeap)
+        while len(maxHeap)>k:
+            heapq.heappop(maxHeap)
+        return [point for dist,point in maxHeap]
