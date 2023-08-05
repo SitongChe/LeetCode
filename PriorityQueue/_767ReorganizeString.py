@@ -3,20 +3,20 @@
 class Solution:
     def reorganizeString(self, s: str) -> str:
         count = Counter(s)
-        maxHeap = [(-cnt,c) for c,cnt in count.items()]
-        heapq.heapify(maxHeap)
-        prev = None
+        available = [[-cnt,c] for c,cnt in count.items()]
+        heapq.heapify(available)
+        unavailable = None
         ans = ""
-        while maxHeap:
-            cnt, cur = heapq.heappop(maxHeap)
-            ans += cur
-            cnt+=1
-            if prev:
-                heapq.heappush(maxHeap,prev)
-                prev = None
-            if cnt != 0:
-                prev = (cnt, cur)
-        if len(ans)!=len(s):
-            return ""
-        return ans
-
+        while available:
+            negCnt,c = heapq.heappop(available)
+            ans += c
+            negCnt+=1
+            if unavailable:
+                heapq.heappush(available,unavailable)
+                unavailable = None
+            if negCnt:
+                unavailable = [negCnt,c]
+        if len(ans)==len(s):
+            return ans
+        return ""
+            

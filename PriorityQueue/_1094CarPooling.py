@@ -2,18 +2,18 @@
 #time O(n log n) space O(N)
 class Solution:
     def carPooling(self, trips: List[List[int]], capacity: int) -> bool:
-        events = [(start,people) for people,start,end in trips]
-        events += [(end,-people) for people,start,end in trips]
-        
-        heapq.heapify(events)
-        cur = 0
-        while events:
-            location,change = heapq.heappop(events)
-            cur+=change
-            if cur>capacity:
+        events = []
+        for numPassengers, fromi, toi in trips:
+            events.append([fromi,numPassengers])
+            events.append([toi,-numPassengers])
+        events.sort()
+        curPassengers = 0
+        for event in events:
+            curPassengers += event[1]
+            if curPassengers > capacity:
                 return False
-
         return True
+
         
     def carPooling(self, trips: List[List[int]], capacity: int) -> bool:
         trips.sort(key = lambda t:t[1])

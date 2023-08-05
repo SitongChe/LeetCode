@@ -3,26 +3,26 @@
 class Solution:
     def longestDiverseString(self, a: int, b: int, c: int) -> str:
         maxHeap = []
-        for cnt, cur in [(-a,"a"),(-b,"b"),(-c,"c")]:
-            if cnt != 0:
-                heapq.heappush(maxHeap,(cnt,cur))
+        for cnt,char in [[a,"a"],[b,"b"],[c,"c"]]:
+            if cnt:
+                maxHeap.append([-cnt,char])
         heapq.heapify(maxHeap)
         ans = ""
         while maxHeap:
-            cnt, cur = heapq.heappop(maxHeap)
-            if len(ans)>=2 and ans[-1]==ans[-2]==cur:
+            negCnt,char = heapq.heappop(maxHeap)
+            if len(ans)>=2 and ans[-1]==char and ans[-2]==char:
                 if not maxHeap:
                     return ans
                 else:
-                    cnt2, cur2 = heapq.heappop(maxHeap)
-                    cnt2+=1
-                    ans += cur2
-                    if cnt2!=0:
-                        heapq.heappush(maxHeap,(cnt2,cur2))
-                    heapq.heappush(maxHeap,(cnt,cur))
+                    negCnt2,char2 = heapq.heappop(maxHeap)
+                    negCnt2+=1
+                    ans+=char2
+                    if negCnt2:
+                        heapq.heappush(maxHeap,[negCnt2,char2])
+                    heapq.heappush(maxHeap,[negCnt,char])
             else:
-                cnt+=1
-                ans+=cur
-                if cnt!=0:
-                    heapq.heappush(maxHeap,(cnt,cur))
+                negCnt+=1
+                ans+=char
+                if negCnt:
+                    heapq.heappush(maxHeap,[negCnt,char])
         return ans

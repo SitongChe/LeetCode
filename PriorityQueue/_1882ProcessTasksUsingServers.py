@@ -2,23 +2,19 @@
 #time O((m + n) log n) space O(N)
 class Solution:
     def assignTasks(self, servers: List[int], tasks: List[int]) -> List[int]:
-        n = len(servers)
-        m = len(tasks)
-        available = [(weight,i) for i,weight in enumerate(servers)]
-        unavailable = []
+        available = [[weight,i] for i,weight in enumerate(servers)]
         heapq.heapify(available)
-        ans = [0]*m
-        curTime = 0
-        
-        for i in range(m):
-            curTime = max(curTime, i)
+        unavailable = []
+        time = 0
+        ans = []
+        for j,task in enumerate(tasks):
+            time = max(time,j)
             if not available:
-                curTime = unavailable[0][0]
-            while unavailable and unavailable[0][0]<=curTime:
-                time, index, weight = heapq.heappop(unavailable)
-                heapq.heappush(available,(weight,index))
-            weight, serverIndex = heapq.heappop(available)
-            heapq.heappush(unavailable,(curTime+tasks[i],serverIndex,weight))
-            ans[i]=serverIndex
-
+                time = max(time,unavailable[0][0])
+            while unavailable and unavailable[0][0]<=time:
+                finishedTime,weight,i= heapq.heappop(unavailable)
+                heapq.heappush(available,[weight,i])
+            weight,i = heapq.heappop(available)
+            heapq.heappush(unavailable,[time+task,weight,i])
+            ans.append(i)
         return ans

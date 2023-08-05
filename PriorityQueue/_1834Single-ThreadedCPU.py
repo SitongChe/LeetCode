@@ -2,22 +2,18 @@
 #time O(NlogN) space O(N)
 class Solution:
     def getOrder(self, tasks: List[List[int]]) -> List[int]:
-        tasks = sorted([(t[0],t[1],i) for i,t in enumerate(tasks)])
+        unavailable = [[task[0],task[1],index] for index,task in enumerate(tasks)]
+        heapq.heapify(unavailable)
+        available = []
+        time = 0
         ans = []
-        curTime = tasks[0][0]
-        minHeap = []
-        n = len(tasks)
-        curTaskIndex = 0
-        while len(ans)<n:
-            while curTaskIndex < n and tasks[curTaskIndex][0]<=curTime:
-                heapq.heappush(minHeap,(tasks[curTaskIndex][1],tasks[curTaskIndex][2]))
-                curTaskIndex += 1
-            if minHeap:
-                curEnd, curIndex = heapq.heappop(minHeap)
-                ans.append(curIndex)
-                curTime += curEnd
-            else:
-                curTime = tasks[curTaskIndex][0]
+        while available or unavailable:
+            if not available:
+                time = max(time,unavailable[0][0])
+            while unavailable and unavailable[0][0]<=time:
+                enqueueTime,processingTime,index = heapq.heappop(unavailable)
+                heapq.heappush(available,[processingTime,index])
+            processingTime,index = heapq.heappop(available)
+            ans.append(index)
+            time += processingTime
         return ans
-                
-
