@@ -18,6 +18,21 @@ class Solution:
         traceback()
         return ans
         
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        def traceback(index):
+            if index==n:
+                ans.append(nums.copy())
+                return
+            for i in range(index,n):
+                nums[i],nums[index]=nums[index],nums[i]
+                traceback(index+1)
+                nums[i],nums[index]=nums[index],nums[i]
+        n = len(nums)
+        ans = []
+        traceback(0)
+        return ans
+
 
 
                     

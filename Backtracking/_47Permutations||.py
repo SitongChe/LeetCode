@@ -22,6 +22,26 @@ class Solution:
         nums.sort()
         traceback()
         return ans
+        
+class Solution:
+    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+        def traceback(index):
+            if index == n:
+                ans.append(nums.copy())
+                return
+            visited = set()
+            for i in range(index,n):
+                if nums[i] in visited:
+                    continue
+                visited.add(nums[i])
+                nums[i],nums[index]=nums[index],nums[i]
+                traceback(index+1)
+                nums[i],nums[index]=nums[index],nums[i]
+        ans = []
+        n = len(nums)
+        nums.sort()
+        traceback(0)
+        return ans
 
 
                     
