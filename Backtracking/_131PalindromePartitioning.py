@@ -2,8 +2,6 @@
 #time O(2^N) space O(N*2^N)
 class Solution:
     def partition(self, s: str) -> List[List[str]]:
-        ans = []
-        n = len(s)
         def isPalindrome(cur):
             i = 0
             j = len(cur)-1
@@ -14,7 +12,7 @@ class Solution:
                 j-=1
             return True
 
-        def traceback(index):
+        def traceback(index,tmp):
             if index == n:
                 ans.append(tmp.copy())
                 return
@@ -22,13 +20,14 @@ class Solution:
                 cur = s[index:i+1]
                 if isPalindrome(cur):
                     tmp.append(cur)
-                    traceback(i+1)
+                    traceback(i+1,tmp)
                     tmp.pop()
-        tmp = []
-        traceback(0)
+   
+        n = len(s)
+        ans = []
+        traceback(0,[])
         return ans
         
-
 
                     
 

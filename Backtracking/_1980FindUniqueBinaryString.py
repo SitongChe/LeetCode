@@ -1,24 +1,31 @@
 #https://leetcode.com/problems/find-unique-binary-string/description/
-#time O(2^N) space O(n)
+#time O(2^m) space O(n+m)
 class Solution:
     def findDifferentBinaryString(self, nums: List[str]) -> str:
-        def traceback():
+        def traceback(index,tmp):
             if self.ans:
-                return
-            if len(tmp)==n:
-                string = "".join(tmp)
-                if string in numsSet:
                     return
-                self.ans = string
+            if index == m:
+                if tmp not in visited:
+                    self.ans = tmp
                 return
             for i in range(2):
-                tmp.append(str(i))
-                traceback()
-                tmp.pop()
+                traceback(index+1,tmp+str(i))
 
-        self.ans = None
         n = len(nums)
-        tmp = []
-        numsSet = set(nums)
-        traceback()
+        m = len(nums[0])
+        self.ans = ""
+        visited=set(nums)
+        traceback(0,"")
         return self.ans
+ 
+#time O(m) space O(m)
+class Solution:
+    def findDifferentBinaryString(self, nums: List[str]) -> str:
+        n = len(nums)
+        ans = ""
+        for i in range(n):
+            cur = 1-int(nums[i][i])
+            ans += str(cur)
+        return ans
+

@@ -25,6 +25,27 @@ class Solution:
         visited = set()
         return traceback(0,0,0)
 
+
+class Solution:
+    def makesquare(self, matchsticks: List[int]) -> bool:
+        def traceback(i):
+            if i == n:
+                return True
+            for j in range(4):
+                if side[j]+matchsticks[i]<=target:
+                    side[j]+=matchsticks[i]
+                    if traceback(i+1):
+                        return True
+                    side[j]-=matchsticks[i]
+            return False
+        total = sum(matchsticks)
+        if total % 4:
+            return False
+        target = total/4
+        side = [0]*4
+        n = len(matchsticks)
+        matchsticks.sort(reverse=True)
+        return traceback(0)
         
 
 

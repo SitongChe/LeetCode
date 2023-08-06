@@ -64,6 +64,7 @@
 - [_1239MaximumLengthofaConcatenatedStringwithUniqueCharacters.py](Backtracking/_1239MaximumLengthofaConcatenatedStringwithUniqueCharacters.py)
 - [_131PalindromePartitioning.py](Backtracking/_131PalindromePartitioning.py)
 - [_17LetterCombinationsofaPhoneNumber.py](Backtracking/_17LetterCombinationsofaPhoneNumber.py)
+- [_1849SplittingaStringIntoDescendingConsecutiveValues.py](Backtracking/_1849SplittingaStringIntoDescendingConsecutiveValues.py)
 - [_1980FindUniqueBinaryString.py](Backtracking/_1980FindUniqueBinaryString.py)
 - [_216CombinationSumIII.py](Backtracking/_216CombinationSumIII.py)
 - [_377CombinationSumIV.py](Backtracking/_377CombinationSumIV.py)
@@ -79,6 +80,7 @@
 - [_78Subsets.py](Backtracking/_78Subsets.py)
 - [_79WordSearch.py](Backtracking/_79WordSearch.py)
 - [_90SubsetsII.py](Backtracking/_90SubsetsII.py)
+- [_93RestoreIPAddresses.py](Backtracking/_93RestoreIPAddresses.py)
 - [__init__.py](Backtracking/__init__.py)
 
 ## BinarySearch

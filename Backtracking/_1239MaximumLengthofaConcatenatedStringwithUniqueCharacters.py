@@ -3,22 +3,24 @@
 class Solution:
     def maxLength(self, arr: List[str]) -> int:
         def traceback(index,tmp):
+            self.ans = max(self.ans,len(tmp))
             for i in range(index,n):
-                cur = arr[i]
-                if not [c for c in cur if c in visited]:
-                    if len(set(cur))<len(cur):
-                        continue
-                    tmp+=len(cur)
-                    self.ans = max(self.ans, tmp)
-                    for c in cur:
+                found = False
+                if len(set(arr[i]))<len(arr[i]):
+                    continue
+                for c in arr[i]:
+                    if c in visited:
+                        found = True
+                if not found:
+                    for c in arr[i]:
                         visited.add(c)
-                    traceback(i+1,tmp)
-                    tmp-=len(cur)
-                    for c in cur:
-                        if c in visited:
-                            visited.remove(c)
-        self.ans = 0
+                    traceback(i+1,tmp+arr[i])
+                    for c in arr[i]:
+                        visited.remove(c)
+            
         n = len(arr)
+        self.ans = 0
         visited = set()
-        traceback(0,0)
+        traceback(0,"")
+        
         return self.ans
