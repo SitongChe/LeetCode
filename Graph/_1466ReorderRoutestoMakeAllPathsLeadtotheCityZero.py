@@ -1,26 +1,25 @@
 #https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/
 #time O(N) space O(N)
-#priority queue
 class Solution:
     def minReorder(self, n: int, connections: List[List[int]]) -> int:
-        def dfs(cur):
-            for node in graph[cur]:
+        def dfs(root):
+            ans = 0
+            for node in graph[root]:
                 if node not in visited:
-                    if (node,cur) not in edges:
-                        self.change+=1
                     visited.add(node)
-                    dfs(node)
-
-        edges=set()
-        visited = set()
-        self.change = 0
-        visited.add(0)
+                    if (node,root) not in edges:
+                        edges.add((node,root))
+                        ans += 1
+                    ans+=dfs(node)
+            return ans
         graph = defaultdict(list)
-        for a,b in connections:
-            graph[a].append(b)
-            graph[b].append(a)
-            edges.add((a,b))
-        dfs(0)
-        return self.change
-        
+        edges = set()
+        visited = set()
+        visited.add(0)
+        for u,v in connections:
+            graph[u].append(v)
+            graph[v].append(u)
+            edges.add((u,v))
+        return dfs(0)
 
+        
