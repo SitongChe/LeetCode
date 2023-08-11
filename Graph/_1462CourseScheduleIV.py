@@ -4,22 +4,19 @@
 class Solution:
     def checkIfPrerequisite(self, numCourses: int, prerequisites: List[List[int]], queries: List[List[int]]) -> List[bool]:
         graph = defaultdict(list)
-        indegree = Counter()
-        for a,b in prerequisites:
-            graph[a].append(b)
-            indegree[b]+=1
-        queue = [i for i in range(numCourses) if indegree[i]==0]
-        parent = {i:{i} for i in range(numCourses)}
+        inorder = Counter()
+        parent = defaultdict(set)
+        for u,v in prerequisites:
+            graph[u].append(v)
+            parent[v].add(u)
+            inorder[v]+=1
+        queue = [i for i in range(numCourses) if inorder[i]==0]
         while queue:
             cur = queue.pop(0)
             for node in graph[cur]:
-                parent[node]=parent[node].union(parent[cur])
-                indegree[node]-=1
-                if indegree[node]==0:
+                inorder[node]-=1
+                parent[node] = parent[node].union(parent[cur])
+                if inorder[node]==0:
                     queue.append(node)
-        ans = []
-        for u,v in queries:
-            ans.append( u in parent[v])
-        return ans
-            
-
+        return [u in parent[v] for u,v in queries]
+        
