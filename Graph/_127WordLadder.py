@@ -6,31 +6,30 @@ from collections import defaultdict
 
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
-        queue = [beginWord]
-        ans = 0
-        visited = set()
-        visited.add(beginWord)
         patterns = defaultdict(list)
         for word in wordList:
             for i in range(len(word)):
                 pattern = word[:i]+"*"+word[i+1:]
                 patterns[pattern].append(word)
-
+        queue = [beginWord]
+        visited = set()
+        visited.add(beginWord)
+        ans = 1
         while queue:
-            n = len(queue)
-            ans += 1
-            for i in range(n):
+            size = len(queue)
+            for _ in range(size):
                 cur = queue.pop(0)
                 if cur == endWord:
                     return ans
-                for j in range(len(cur)):
-                    pattern = cur[:j]+"*"+cur[j+1:]
+                for i in range(len(cur)):
+                    pattern = cur[:i]+"*"+cur[i+1:]
                     for word in patterns[pattern]:
                         if word not in visited:
-                            queue.append(word)
                             visited.add(word)
-            
+                            queue.append(word)
+            ans += 1
         return 0
+            
                     
 
 

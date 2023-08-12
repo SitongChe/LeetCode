@@ -127,6 +127,7 @@
 - [_2477MinimumFuelCosttoReporttotheCapital.py](Graph/_2477MinimumFuelCosttoReporttotheCapital.py)
 - [_2492MinimumScoreofaPathBetweenTwoCities.py](Graph/_2492MinimumScoreofaPathBetweenTwoCities.py)
 - [_332ReconstructItinerary.py](Graph/_332ReconstructItinerary.py)
+- [_399EvaluateDivision.py](Graph/_399EvaluateDivision.py)
 - [_417PacificAtlanticWaterFlow.py](Graph/_417PacificAtlanticWaterFlow.py)
 - [_463IslandPerimeter.py](Graph/_463IslandPerimeter.py)
 - [_630CourseScheduleIII.py](Graph/_630CourseScheduleIII.py)
@@ -143,6 +144,11 @@
 - [_953VerifyinganAlienDictionary.py](Graph/_953VerifyinganAlienDictionary.py)
 - [_994RottingOranges.py](Graph/_994RottingOranges.py)
 - [__init__.py](Graph/__init__.py)
+
+## Greedy
+- [_53MaximumSubarray.py](Greedy/_53MaximumSubarray.py)
+- [_918MaximumSumCircularSubarray.py](Greedy/_918MaximumSumCircularSubarray.py)
+- [_978LongestTurbulentSubarray.py](Greedy/_978LongestTurbulentSubarray.py)
 
 ## Intervals
 - [_1851MinimumIntervaltoIncludeEachQuery.py](Intervals/_1851MinimumIntervaltoIncludeEachQuery.py)
