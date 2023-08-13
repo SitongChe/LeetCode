@@ -1,21 +1,23 @@
 #https://leetcode.com/problems/swim-in-rising-water/
 #time O(NlogN) space O(N)
 #priority queue
+class Solution:
     def swimInWater(self, grid: List[List[int]]) -> int:
         n = len(grid)
+        minHeap = [[grid[0][0],0,0]]
         visited = set()
-        heap = [[grid[0][0],0,0]]
-        ans = 0
-        while heap:
-            time, x, y = heapq.heappop(heap)
-            if (x,y) in visited:
-                continue
-            ans = max(ans,time)
-            if x == n-1 and y == n-1:
-                return ans
-            visited.add((x,y))
-            for nx,ny in (x+1,y),(x-1,y),(x,y+1),(x,y-1):
-                if nx>=0 and nx<n and ny>=0 and ny<n and (nx,ny) not in visited:
-                    heapq.heappush(heap,[grid[nx][ny],nx,ny])
-        return ans
-
+        dirs = [[1,0],[-1,0],[0,1],[0,-1]]
+        while minHeap:
+            time,x,y = heapq.heappop(minHeap)
+            if (x,y) not in visited:
+                visited.add((x,y))
+                if x==n-1 and y==n-1:
+                    return time
+                for diri,dirj in dirs:
+                    xx = x+diri
+                    yy = y+dirj
+                    if xx<0 or xx>=n or yy<0 or yy>=n or (xx,yy) in visited:
+                        continue
+                    heapq.heappush(minHeap,[max(time,grid[xx][yy]),xx,yy])
+        return 0
+        

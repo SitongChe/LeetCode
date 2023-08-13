@@ -2,21 +2,22 @@
 #time O(NlogN) space O(N)
 #priority queue
 class Solution:
-    def maxProbability(self, n: int, edges: List[List[int]], succProb: List[float], start: int, end: int) -> float:
+    def maxProbability(self, n: int, edges: List[List[int]], succProb: List[float], start_node: int, end_node: int) -> float:
         graph = defaultdict(list)
-        for i in range(len(edges)):
-            graph[edges[i][0]].append([edges[i][1],succProb[i]])
-            graph[edges[i][1]].append([edges[i][0],succProb[i]])
+        for (u,v),p in zip(edges,succProb):
+            graph[u].append([v,p])
+            graph[v].append([u,p])
+        maxHeap = [[-1,start_node]]
         visited = set()
-        heap = [[-1,start]]
-        while heap:
-            p,cur = heapq.heappop(heap)
-            visited.add(cur)
-            if cur == end:
-                return -p
-            for node,prob in graph[cur]:
-                if node not in visited:
-                    heapq.heappush(heap,[p*prob,node])
+        while maxHeap:
+            negP,cur = heapq.heappop(maxHeap)
+            if cur not in visited:
+                visited.add(cur)
+                if cur == end_node:
+                    return -negP
+                for node,p in graph[cur]:
+                    if node not in visited:
+                        heapq.heappush(maxHeap,[p*negP,node])
         return 0
 
-
+        

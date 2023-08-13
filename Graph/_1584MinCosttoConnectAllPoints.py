@@ -7,7 +7,7 @@ class Solution:
         heap = [[0,points[0][0],points[0][1]]]
         visited = set()
         ans = 0
-        while heap:
+        while len(visited)<n:
             dis,u,v = heapq.heappop(heap)
             if (u,v) not in visited:
                 ans += dis

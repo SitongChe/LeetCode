@@ -7,11 +7,11 @@ class Solution:
         prices[src]=0
         for i in range(k+1):
             tmpPrices = prices.copy()
-            for u,v,c in flights:
+            for u,v,p in flights:
                 if prices[u]==inf:
                     continue
-                if prices[u]+c<tmpPrices[v]:
-                    tmpPrices[v]=prices[u]+c
+                tmpPrices[v]=min(tmpPrices[v],prices[u]+p)
             prices = tmpPrices
         return prices[dst] if prices[dst]!=inf else -1
+        
 
