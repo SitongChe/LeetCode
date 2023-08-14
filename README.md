@@ -210,10 +210,20 @@
 
 ## Math
 - [_1071GreatestCommonDivisorofStrings.py](Math/_1071GreatestCommonDivisorofStrings.py)
+- [_1260Shift2DGrid.py](Math/_1260Shift2DGrid.py)
+- [_13RomantoInteger.py](Math/_13RomantoInteger.py)
 - [_149MaxPointsonaLine.py](Math/_149MaxPointsonaLine.py)
 - [_1523CountOddNumbersinanIntervalRange.py](Math/_1523CountOddNumbersinanIntervalRange.py)
 - [_1572MatrixDiagonalSum.py](Math/_1572MatrixDiagonalSum.py)
 - [_1980FindUniqueBinaryString.py](Math/_1980FindUniqueBinaryString.py)
+- [_202HappyNumber.py](Math/_202HappyNumber.py)
+- [_263UglyNumber.py](Math/_263UglyNumber.py)
+- [_48RotateImage.py](Math/_48RotateImage.py)
+- [_54SpiralMatrix.py](Math/_54SpiralMatrix.py)
+- [_59SpiralMatrixII.py](Math/_59SpiralMatrixII.py)
+- [_66PlusOne.py](Math/_66PlusOne.py)
+- [_73SetMatrixZeroes.py](Math/_73SetMatrixZeroes.py)
+- [_9PalindromeNumber.py](Math/_9PalindromeNumber.py)
 - [__init__.py](Math/__init__.py)
 
 ## OpenAI
