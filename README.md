@@ -170,7 +170,9 @@
 - [_978LongestTurbulentSubarray.py](Greedy/_978LongestTurbulentSubarray.py)
 
 ## Intervals
+- [_1288RemoveCoveredIntervals.py](Intervals/_1288RemoveCoveredIntervals.py)
 - [_1851MinimumIntervaltoIncludeEachQuery.py](Intervals/_1851MinimumIntervaltoIncludeEachQuery.py)
+- [_352DataStreamasDisjointIntervals.py](Intervals/_352DataStreamasDisjointIntervals.py)
 - [_435Non-overlappingIntervals.py](Intervals/_435Non-overlappingIntervals.py)
 - [_56MergeIntervals.py](Intervals/_56MergeIntervals.py)
 - [_57InsertInterval.py](Intervals/_57InsertInterval.py)
@@ -207,6 +209,10 @@
 - [__init__.py](LinkedList/__init__.py)
 
 ## Math
+- [_1071GreatestCommonDivisorofStrings.py](Math/_1071GreatestCommonDivisorofStrings.py)
+- [_149MaxPointsonaLine.py](Math/_149MaxPointsonaLine.py)
+- [_1523CountOddNumbersinanIntervalRange.py](Math/_1523CountOddNumbersinanIntervalRange.py)
+- [_1572MatrixDiagonalSum.py](Math/_1572MatrixDiagonalSum.py)
 - [_1980FindUniqueBinaryString.py](Math/_1980FindUniqueBinaryString.py)
 - [__init__.py](Math/__init__.py)
 
