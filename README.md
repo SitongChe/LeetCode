@@ -102,6 +102,11 @@
 - [_981TimeBasedKey-ValueStore.py](BinarySearch/_981TimeBasedKey-ValueStore.py)
 - [__init__.py](BinarySearch/__init__.py)
 
+## BitManipulation
+- [_136SingleNumber.py](BitManipulation/_136SingleNumber.py)
+- [_191Numberof1Bits.py](BitManipulation/_191Numberof1Bits.py)
+- [_338CountingBits.py](BitManipulation/_338CountingBits.py)
+
 ## Graph
 - [_1020NumberofEnclaves.py](Graph/_1020NumberofEnclaves.py)
 - [_1091ShortestPathinBinaryMatrix.py](Graph/_1091ShortestPathinBinaryMatrix.py)
@@ -209,19 +214,26 @@
 - [__init__.py](LinkedList/__init__.py)
 
 ## Math
+- [_1041RobotBoundedInCircle.py](Math/_1041RobotBoundedInCircle.py)
 - [_1071GreatestCommonDivisorofStrings.py](Math/_1071GreatestCommonDivisorofStrings.py)
 - [_1260Shift2DGrid.py](Math/_1260Shift2DGrid.py)
+- [_12IntegertoRoman.py](Math/_12IntegertoRoman.py)
 - [_13RomantoInteger.py](Math/_13RomantoInteger.py)
 - [_149MaxPointsonaLine.py](Math/_149MaxPointsonaLine.py)
 - [_1523CountOddNumbersinanIntervalRange.py](Math/_1523CountOddNumbersinanIntervalRange.py)
 - [_1572MatrixDiagonalSum.py](Math/_1572MatrixDiagonalSum.py)
 - [_1980FindUniqueBinaryString.py](Math/_1980FindUniqueBinaryString.py)
+- [_2013DetectSquares.py](Math/_2013DetectSquares.py)
+- [_2028FindMissingObservations.py](Math/_2028FindMissingObservations.py)
 - [_202HappyNumber.py](Math/_202HappyNumber.py)
 - [_263UglyNumber.py](Math/_263UglyNumber.py)
+- [_43MultiplyStrings.py](Math/_43MultiplyStrings.py)
 - [_48RotateImage.py](Math/_48RotateImage.py)
+- [_50Pow(x, n).py](Math/_50Pow(x, n).py)
 - [_54SpiralMatrix.py](Math/_54SpiralMatrix.py)
 - [_59SpiralMatrixII.py](Math/_59SpiralMatrixII.py)
 - [_66PlusOne.py](Math/_66PlusOne.py)
+- [_6ZigzagConversion.py](Math/_6ZigzagConversion.py)
 - [_73SetMatrixZeroes.py](Math/_73SetMatrixZeroes.py)
 - [_9PalindromeNumber.py](Math/_9PalindromeNumber.py)
 - [__init__.py](Math/__init__.py)
