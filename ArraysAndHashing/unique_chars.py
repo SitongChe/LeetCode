@@ -20,14 +20,17 @@ None -> False
 'foo' -> False
 'bar' -> True
 
-
+Time: O(n)
+Space: Additional O(n)
 Code: Sets and Length Comparison
 class UniqueCharsSet(object):
     def has_unique_chars(self, string):
         if string is None:
             return False
         return len(set(string)) == len(string)
-        
+ 
+Time: O(n)
+Space: Additional O(n)
 Code: Hash Map Lookup
 class UniqueChars(object):
     def has_unique_chars(self, string):
@@ -40,7 +43,9 @@ class UniqueChars(object):
             else:
                 chars_set.add(char)
         return True
-        
+    
+Time: O(n^2)
+Space: O(1)
 Code: In-Place
 class UniqueCharsInPlace(object):
     def has_unique_chars(self, string):
