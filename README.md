@@ -104,8 +104,15 @@
 
 ## BitManipulation
 - [_136SingleNumber.py](BitManipulation/_136SingleNumber.py)
+- [_1470ShuffletheArray.py](BitManipulation/_1470ShuffletheArray.py)
+- [_190ReverseBits.py](BitManipulation/_190ReverseBits.py)
 - [_191Numberof1Bits.py](BitManipulation/_191Numberof1Bits.py)
+- [_268MissingNumber.py](BitManipulation/_268MissingNumber.py)
 - [_338CountingBits.py](BitManipulation/_338CountingBits.py)
+- [_371SumofTwoIntegers.py](BitManipulation/_371SumofTwoIntegers.py)
+- [_67AddBinary.py](BitManipulation/_67AddBinary.py)
+- [_7ReverseInteger.py](BitManipulation/_7ReverseInteger.py)
+- [_989AddtoArray-FormofInteger.py](BitManipulation/_989AddtoArray-FormofInteger.py)
 
 ## Graph
 - [_1020NumberofEnclaves.py](Graph/_1020NumberofEnclaves.py)
