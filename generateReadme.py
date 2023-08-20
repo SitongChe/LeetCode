@@ -19,7 +19,7 @@ def generate_md_file(folder_path, output_file):
             
             # Write the files in the current directory
             for file_name in files:
-                if file_name.endswith(".py") and file_name.startswith("_"):
+                if file_name.endswith(".py"):
                     file_path = os.path.join(os.path.basename(root), file_name)
                     md_file.write("- [{}]({})\n".format(file_name, file_path))
             

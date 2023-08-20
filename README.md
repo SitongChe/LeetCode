@@ -1,6 +1,11 @@
 # LeetCode Questions And Answers
 
 ## Airbnb
+- [BuddyList.py](Airbnb/BuddyList.py)
+- [IPToCIDR.py](Airbnb/IPToCIDR.py)
+- [MeetingRoom.py](Airbnb/MeetingRoom.py)
+- [PourWater.py](Airbnb/PourWater.py)
+- [RoundingPrice.py](Airbnb/RoundingPrice.py)
 - [_1557MinimumNumberofVerticestoReachAllNodes.py](Airbnb/_1557MinimumNumberofVerticestoReachAllNodes.py)
 - [_212WordSearchII.py](Airbnb/_212WordSearchII.py)
 - [_215KthLargestElementinanArray.py](Airbnb/_215KthLargestElementinanArray.py)
@@ -59,6 +64,17 @@
 - [_912SortanArray.py](ArraysAndHashing/_912SortanArray.py)
 - [_929UniqueEmailAddresses.py](ArraysAndHashing/_929UniqueEmailAddresses.py)
 - [__init__.py](ArraysAndHashing/__init__.py)
+- [better_compress_challenge.py](ArraysAndHashing/better_compress_challenge.py)
+- [compress_challenge.py](ArraysAndHashing/compress_challenge.py)
+- [fizz_buzz_challenge.py](ArraysAndHashing/fizz_buzz_challenge.py)
+- [hash_map_challenge.py](ArraysAndHashing/hash_map_challenge.py)
+- [permutation_challenge.py](ArraysAndHashing/permutation_challenge.py)
+- [priority_queue_challenge.py](ArraysAndHashing/priority_queue_challenge.py)
+- [reverse_string_challenge.py](ArraysAndHashing/reverse_string_challenge.py)
+- [rotation_challenge.py](ArraysAndHashing/rotation_challenge.py)
+- [str_diff_challenge.py](ArraysAndHashing/str_diff_challenge.py)
+- [two_sum_challenge.py](ArraysAndHashing/two_sum_challenge.py)
+- [unique_chars.py](ArraysAndHashing/unique_chars.py)
 
 ## Backtracking
 - [_1239MaximumLengthofaConcatenatedStringwithUniqueCharacters.py](Backtracking/_1239MaximumLengthofaConcatenatedStringwithUniqueCharacters.py)
@@ -113,6 +129,14 @@
 - [_67AddBinary.py](BitManipulation/_67AddBinary.py)
 - [_7ReverseInteger.py](BitManipulation/_7ReverseInteger.py)
 - [_989AddtoArray-FormofInteger.py](BitManipulation/_989AddtoArray-FormofInteger.py)
+- [bit_challenge.py](BitManipulation/bit_challenge.py)
+- [bits_to_flip_challenge.py](BitManipulation/bits_to_flip_challenge.py)
+- [draw_line_challenge.py](BitManipulation/draw_line_challenge.py)
+- [flip_bit_challenge.py](BitManipulation/flip_bit_challenge.py)
+- [get_next_challenge.py](BitManipulation/get_next_challenge.py)
+- [insert_m_into_n_challenge.py](BitManipulation/insert_m_into_n_challenge.py)
+- [pairwise_swap_challenge.py](BitManipulation/pairwise_swap_challenge.py)
+- [print_binary_challenge.py](BitManipulation/print_binary_challenge.py)
 
 ## Graph
 - [_1020NumberofEnclaves.py](Graph/_1020NumberofEnclaves.py)
@@ -162,6 +186,14 @@
 - [_953VerifyinganAlienDictionary.py](Graph/_953VerifyinganAlienDictionary.py)
 - [_994RottingOranges.py](Graph/_994RottingOranges.py)
 - [__init__.py](Graph/__init__.py)
+- [bfs_challenge.py](Graph/bfs_challenge.py)
+- [build_order_challenge.py](Graph/build_order_challenge.py)
+- [dfs_challenge.py](Graph/dfs_challenge.py)
+- [graph_challenge.py](Graph/graph_challenge.py)
+- [graph_shortest_path_challenge.py](Graph/graph_shortest_path_challenge.py)
+- [invert_tree_challenge.py](Graph/invert_tree_challenge.py)
+- [path_exists_challenge.py](Graph/path_exists_challenge.py)
+- [shortest_path_challenge.py](Graph/shortest_path_challenge.py)
 
 ## Greedy
 - [_1029TwoCityScheduling.py](Greedy/_1029TwoCityScheduling.py)
@@ -355,6 +387,12 @@
 - [_96UniqueBinarySearchTrees.py](Trees/_96UniqueBinarySearchTrees.py)
 - [_98ValidateBinarySearchTree.py](Trees/_98ValidateBinarySearchTree.py)
 - [__init__.py](Trees/__init__.py)
+- [bst_challenge.py](Trees/bst_challenge.py)
+- [bst_min_challenge.py](Trees/bst_min_challenge.py)
+- [bst_second_largest_challenge.py](Trees/bst_second_largest_challenge.py)
+- [bst_successor_challenge.py](Trees/bst_successor_challenge.py)
+- [bst_validate_challenge.py](Trees/bst_validate_challenge.py)
+- [check_balance_challenge.py](Trees/check_balance_challenge.py)
 
 ## Tries
 - [_1268SearchSuggestionsSystem.py](Tries/_1268SearchSuggestionsSystem.py)
