@@ -254,6 +254,11 @@
 - [add_reverse_challenge.py](LinkedList/add_reverse_challenge.py)
 - [delete_mid_challenge.py](LinkedList/delete_mid_challenge.py)
 - [find_loop_start_challenge.py](LinkedList/find_loop_start_challenge.py)
+- [kth_to_last_elem_challenge.py](LinkedList/kth_to_last_elem_challenge.py)
+- [linked_list_challenge.py](LinkedList/linked_list_challenge.py)
+- [palindrome_challenge.py](LinkedList/palindrome_challenge.py)
+- [partition_challenge.py](LinkedList/partition_challenge.py)
+- [remove_duplicates_challenge.py](LinkedList/remove_duplicates_challenge.py)
 
 ## Math
 - [_1041RobotBoundedInCircle.py](Math/_1041RobotBoundedInCircle.py)
@@ -279,6 +284,11 @@
 - [_73SetMatrixZeroes.py](Math/_73SetMatrixZeroes.py)
 - [_9PalindromeNumber.py](Math/_9PalindromeNumber.py)
 - [__init__.py](Math/__init__.py)
+- [add_digits_challenge.py](Math/add_digits_challenge.py)
+- [check_prime_challenge.py](Math/check_prime_challenge.py)
+- [generate_prime_challenge.py](Math/generate_prime_challenge.py)
+- [math_ops_challenge.py](Math/math_ops_challenge.py)
+- [power_two_challenge.py](Math/power_two_challenge.py)
 
 ## OpenAI
 - [_304RangeSumQuery2D-Immutable.py](OpenAI/_304RangeSumQuery2D-Immutable.py)
