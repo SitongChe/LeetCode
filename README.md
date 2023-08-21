@@ -251,6 +251,9 @@
 - [_876MiddleoftheLinkedList.py](LinkedList/_876MiddleoftheLinkedList.py)
 - [_92ReverseLinkedListII.py](LinkedList/_92ReverseLinkedListII.py)
 - [__init__.py](LinkedList/__init__.py)
+- [add_reverse_challenge.py](LinkedList/add_reverse_challenge.py)
+- [delete_mid_challenge.py](LinkedList/delete_mid_challenge.py)
+- [find_loop_start_challenge.py](LinkedList/find_loop_start_challenge.py)
 
 ## Math
 - [_1041RobotBoundedInCircle.py](Math/_1041RobotBoundedInCircle.py)
@@ -303,6 +306,7 @@
 - [_767ReorganizeString.py](PriorityQueue/_767ReorganizeString.py)
 - [_973KClosestPointstoOrigin.py](PriorityQueue/_973KClosestPointstoOrigin.py)
 - [__init__.py](PriorityQueue/__init__.py)
+- [min_heap_challenge.py](PriorityQueue/min_heap_challenge.py)
 
 ## SlidingWindow
 - [_121BestTimetoBuyandSellStock.py](SlidingWindow/_121BestTimetoBuyandSellStock.py)
@@ -387,12 +391,17 @@
 - [_96UniqueBinarySearchTrees.py](Trees/_96UniqueBinarySearchTrees.py)
 - [_98ValidateBinarySearchTree.py](Trees/_98ValidateBinarySearchTree.py)
 - [__init__.py](Trees/__init__.py)
+- [bfs_challenge.py](Trees/bfs_challenge.py)
 - [bst_challenge.py](Trees/bst_challenge.py)
 - [bst_min_challenge.py](Trees/bst_min_challenge.py)
 - [bst_second_largest_challenge.py](Trees/bst_second_largest_challenge.py)
 - [bst_successor_challenge.py](Trees/bst_successor_challenge.py)
 - [bst_validate_challenge.py](Trees/bst_validate_challenge.py)
 - [check_balance_challenge.py](Trees/check_balance_challenge.py)
+- [dfs_challenge.py](Trees/dfs_challenge.py)
+- [height_challenge.py](Trees/height_challenge.py)
+- [tree_lca_challenge.py](Trees/tree_lca_challenge.py)
+- [tree_level_lists_solution.py](Trees/tree_level_lists_solution.py)
 
 ## Tries
 - [_1268SearchSuggestionsSystem.py](Tries/_1268SearchSuggestionsSystem.py)
@@ -400,6 +409,7 @@
 - [_211DesignAddandSearchWordsDataStructure.py](Tries/_211DesignAddandSearchWordsDataStructure.py)
 - [_212WordSearchII.py](Tries/_212WordSearchII.py)
 - [__init__.py](Tries/__init__.py)
+- [trie_challenge.py](Tries/trie_challenge.py)
 
 ## TwoPointers
 - [_11ContainerWithMostWater.py](TwoPointers/_11ContainerWithMostWater.py)
