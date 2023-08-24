@@ -64,15 +64,23 @@
 - [_912SortanArray.py](ArraysAndHashing/_912SortanArray.py)
 - [_929UniqueEmailAddresses.py](ArraysAndHashing/_929UniqueEmailAddresses.py)
 - [__init__.py](ArraysAndHashing/__init__.py)
+- [assign_cookies_challenge.py](ArraysAndHashing/assign_cookies_challenge.py)
 - [better_compress_challenge.py](ArraysAndHashing/better_compress_challenge.py)
 - [compress_challenge.py](ArraysAndHashing/compress_challenge.py)
 - [fizz_buzz_challenge.py](ArraysAndHashing/fizz_buzz_challenge.py)
+- [format_license_key_challenge.py](ArraysAndHashing/format_license_key_challenge.py)
 - [hash_map_challenge.py](ArraysAndHashing/hash_map_challenge.py)
+- [longest_path_challenge.py](ArraysAndHashing/longest_path_challenge.py)
+- [move_zeroes_challenge.py](ArraysAndHashing/move_zeroes_challenge.py)
+- [mult_other_numbers_challenge.py](ArraysAndHashing/mult_other_numbers_challenge.py)
 - [permutation_challenge.py](ArraysAndHashing/permutation_challenge.py)
 - [priority_queue_challenge.py](ArraysAndHashing/priority_queue_challenge.py)
+- [ransom_note_challenge.py](ArraysAndHashing/ransom_note_challenge.py)
 - [reverse_string_challenge.py](ArraysAndHashing/reverse_string_challenge.py)
 - [rotation_challenge.py](ArraysAndHashing/rotation_challenge.py)
+- [sentence_screen_fit_challenge.py](ArraysAndHashing/sentence_screen_fit_challenge.py)
 - [str_diff_challenge.py](ArraysAndHashing/str_diff_challenge.py)
+- [sub_two_challenge.py](ArraysAndHashing/sub_two_challenge.py)
 - [two_sum_challenge.py](ArraysAndHashing/two_sum_challenge.py)
 - [unique_chars.py](ArraysAndHashing/unique_chars.py)
 
@@ -192,6 +200,7 @@
 - [graph_challenge.py](Graph/graph_challenge.py)
 - [graph_shortest_path_challenge.py](Graph/graph_shortest_path_challenge.py)
 - [invert_tree_challenge.py](Graph/invert_tree_challenge.py)
+- [island_perimeter_challenge.py](Graph/island_perimeter_challenge.py)
 - [path_exists_challenge.py](Graph/path_exists_challenge.py)
 - [shortest_path_challenge.py](Graph/shortest_path_challenge.py)
 
@@ -212,6 +221,7 @@
 - [_846HandofStraights.py](Greedy/_846HandofStraights.py)
 - [_918MaximumSumCircularSubarray.py](Greedy/_918MaximumSumCircularSubarray.py)
 - [_978LongestTurbulentSubarray.py](Greedy/_978LongestTurbulentSubarray.py)
+- [max_profit_challenge.py](Greedy/max_profit_challenge.py)
 
 ## Intervals
 - [_1288RemoveCoveredIntervals.py](Intervals/_1288RemoveCoveredIntervals.py)
@@ -221,6 +231,8 @@
 - [_56MergeIntervals.py](Intervals/_56MergeIntervals.py)
 - [_57InsertInterval.py](Intervals/_57InsertInterval.py)
 - [__init__.py](Intervals/__init__.py)
+- [busiest_period_challenge.py](Intervals/busiest_period_challenge.py)
+- [merge_ranges_challenge.py](Intervals/merge_ranges_challenge.py)
 
 ## LinkedList
 - [_138CopyListwithRandomPointer.py](LinkedList/_138CopyListwithRandomPointer.py)
@@ -288,7 +300,12 @@
 - [check_prime_challenge.py](Math/check_prime_challenge.py)
 - [generate_prime_challenge.py](Math/generate_prime_challenge.py)
 - [math_ops_challenge.py](Math/math_ops_challenge.py)
+- [maximizing_xor_challenge.py](Math/maximizing_xor_challenge.py)
+- [nim_challenge.py](Math/nim_challenge.py)
 - [power_two_challenge.py](Math/power_two_challenge.py)
+- [prod_three_challenge.py](Math/prod_three_challenge.py)
+- [sub_two_challenge.py](Math/sub_two_challenge.py)
+- [sum_two_challenge.py](Math/sum_two_challenge.py)
 
 ## OpenAI
 - [_304RangeSumQuery2D-Immutable.py](OpenAI/_304RangeSumQuery2D-Immutable.py)
@@ -335,6 +352,7 @@
 - [_658FindKClosestElements.py](SlidingWindow/_658FindKClosestElements.py)
 - [_76MinimumWindowSubstring.py](SlidingWindow/_76MinimumWindowSubstring.py)
 - [__init__.py](SlidingWindow/__init__.py)
+- [longest_substr_challenge.py](SlidingWindow/longest_substr_challenge.py)
 
 ## Stack
 - [_1209RemoveAllAdjacentDuplicatesinStringII.py](Stack/_1209RemoveAllAdjacentDuplicatesinStringII.py)
