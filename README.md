@@ -106,6 +106,12 @@
 - [_90SubsetsII.py](Backtracking/_90SubsetsII.py)
 - [_93RestoreIPAddresses.py](Backtracking/_93RestoreIPAddresses.py)
 - [__init__.py](Backtracking/__init__.py)
+- [coin_change_challenge.py](Backtracking/coin_change_challenge.py)
+- [coin_change_min_challenge.py](Backtracking/coin_change_min_challenge.py)
+- [grid_path_challenge.py](Backtracking/grid_path_challenge.py)
+- [hanoi_challenge.py](Backtracking/hanoi_challenge.py)
+- [knapsack_challenge.py](Backtracking/knapsack_challenge.py)
+- [knapsack_unbounded_challenge.py](Backtracking/knapsack_unbounded_challenge.py)
 
 ## BinarySearch
 - [_116PopulatingNextRightPointersinEachNode.py](BinarySearch/_116PopulatingNextRightPointersinEachNode.py)
@@ -298,6 +304,7 @@
 - [__init__.py](Math/__init__.py)
 - [add_digits_challenge.py](Math/add_digits_challenge.py)
 - [check_prime_challenge.py](Math/check_prime_challenge.py)
+- [fibonacci_challenge.py](Math/fibonacci_challenge.py)
 - [generate_prime_challenge.py](Math/generate_prime_challenge.py)
 - [math_ops_challenge.py](Math/math_ops_challenge.py)
 - [maximizing_xor_challenge.py](Math/maximizing_xor_challenge.py)
@@ -306,6 +313,7 @@
 - [prod_three_challenge.py](Math/prod_three_challenge.py)
 - [sub_two_challenge.py](Math/sub_two_challenge.py)
 - [sum_two_challenge.py](Math/sum_two_challenge.py)
+- [utopian_tree_challenge.py](Math/utopian_tree_challenge.py)
 
 ## OpenAI
 - [_304RangeSumQuery2D-Immutable.py](OpenAI/_304RangeSumQuery2D-Immutable.py)
