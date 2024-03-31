@@ -30,30 +30,31 @@ class Solution:
 
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
-        def findNSum(nums,target,N,result,results):
-            if len(nums)<N or N<2 or target<nums[0]*N or target>nums[-1]*N:
+        def findKSum(start,end,k,target,tmp):
+            if end-start<k or nums[start]*k>target or nums[end-1]*k<target:
                 return
-            if N == 2:
-                l=0
-                r=len(nums)-1
+            if k==2:
+                l = start
+                r = end-1
                 while l<r:
-                    sum = nums[l]+nums[r]
-                    if sum == target:
-                        results.append(result+[nums[l],nums[r]])
+                    cur = nums[l]+nums[r]
+                    if cur==target:
+                        ans.append(tmp.copy()+[nums[l],nums[r]])
+                        while l<r and nums[l+1]==nums[l]:
+                            l+=1
                         l+=1
                         r-=1
-                        while l<r and nums[l]==nums[l-1]:
-                            l+=1
-                    elif sum<target:
+                    elif cur<target:
                         l+=1
                     else:
                         r-=1
             else:
-                for i in range(len(nums)-N+1):
-                    if i-1>=0 and nums[i-1]==nums[i]:
+                for i in range(start,end):
+                    if i>start and nums[i]==nums[i-1]:
                         continue
-                    findNSum(nums[i+1:],target-nums[i],N-1,result+[nums[i]],results)
-        results = []
+                    findKSum(i+1,end,k-1,target-nums[i],tmp+[nums[i]])
+        ans = []
         nums.sort()
-        findNSum(nums,target,4,[],results)
-        return results
+        findKSum(0,len(nums),4,target,[])
+        return ans
+        

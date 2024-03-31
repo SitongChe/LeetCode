@@ -3,13 +3,13 @@
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         def traceback(left,right,tmp):
-            if left == n and right == n:
+            if left==0 and right==0:
                 ans.append(tmp)
                 return
-            if left<n:
-                traceback(left+1,right,tmp+"(")
-            if left>right:
-                traceback(left,right+1,tmp+")")
+            if left>0:
+                traceback(left-1,right,tmp+"(")
+            if right>left:
+                traceback(left,right-1,tmp+")")
         ans = []
-        traceback(0,0,"")
+        traceback(n,n,"")
         return ans

@@ -12,7 +12,7 @@ class Solution:
         for end in range(n):
             count[s[end]]+=1
             maxF=max(maxF,count[s[end]])
-            while end-start+1-maxF>k:
+            if end-start+1-maxF>k:
                 count[s[start]]-=1
                 start+=1
             ans = max(ans,end-start+1)
